@@ -1,0 +1,19 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+    width: 5%;
+}
+
+footer p {
+    display: inline-block;
+    margin-left: 2%;
+    color: rgb(153, 63, 63);
+    bottom: 0;
+}
