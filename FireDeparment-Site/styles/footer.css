@@ -23,3 +23,31 @@ footer p {
     margin-left: 2%;
     color: #b6b6b6;
 }
+
+#sign-in {
+    display: inline-block;
+    margin-left: 43%;
+    background-color: #bbaea0;
+    border: none;
+    padding: 0.3% 1%;
+    border-radius: 15px;
+}
+
+#sign-in:hover {
+    cursor: pointer;
+    background-color: #948a81;
+}
+
+#sign-up {
+    display: inline-block;
+    background-color: #776f67;
+    margin-left: 0.5%;
+    border: none;
+    padding: 0.3% 1%;
+    border-radius: 15px;
+}
+
+#sign-up:hover {
+    cursor: pointer;
+    background-color: #968a7f;
+}
