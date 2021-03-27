@@ -1,11 +1,12 @@
 footer {
-    display: fixed;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #1f222a;
 }
 
 footer hr {
+    top: 0;
     border: 1px solid #b6b6b6;
     width: 90%;
     align-self: center;
