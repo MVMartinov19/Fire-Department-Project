@@ -1,19 +1,25 @@
 footer {
+    display: fixed;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
+footer hr {
+    border: 1px solid #b6b6b6;
+    width: 90%;
+    align-self: center;
+}
+
 footer img {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 5%;
+    margin-left: 7%;
     width: 5%;
 }
 
 footer p {
     display: inline-block;
     margin-left: 2%;
-    color: rgb(153, 63, 63);
-    bottom: 0;
+    color: #b6b6b6;
 }
