@@ -12,7 +12,7 @@ body {
     height: 54px;
     /* Make line height so that navbar can be seen */
     line-height: 54px;
-    border-bottom: 1px solid gray;
+    border-bottom: 3px solid gray;
     /* Make the box sizing border-box so that width and height are apply to all parts of the elements */
     box-sizing: border-box;
     background-color: #191c22;
@@ -98,5 +98,5 @@ body {
 
 .last {
     /* Make link's space 4% from the right border of the page */
-    margin-right: 4%;
+    margin-right: 2%;
 }
