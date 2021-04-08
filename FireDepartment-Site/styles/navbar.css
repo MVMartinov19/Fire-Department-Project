@@ -1,0 +1,27 @@
+.main-header {
+    width: 100%;
+    height: 62px;
+    /* Make align center for text*/
+    line-height: 62px;
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    /* Put the border inside the header element*/
+    box-sizing: border-box;
+    background-color: #191c22;
+}
+
+.main-nav a {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #808080;
+}
+
+.web-site-name {
+    display: inline;
+}
