@@ -1,0 +1,23 @@
+.swiper-container {
+    width: 100%;
+    height: 550px;
+    border-bottom: 3px solid #808080;
+}
+
+.slide1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/homePageFiremanImage.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fireman.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fire.jpg");
+    background-position: center;
+    background-size: cover;
+}
