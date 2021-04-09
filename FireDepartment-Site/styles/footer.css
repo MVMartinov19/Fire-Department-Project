@@ -1,0 +1,98 @@
+.main-footer {
+    background-color: #2d333d;
+}
+
+.main-footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-footer-contacts {
+    background-image: url('../images/footer-images/world-map.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main-footer-contacts {
+    width: 400px;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.main-footer-contacts h1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.main-footer-contacts i {
+    padding-right: 5px;
+}
+
+.main-footer-contacts ul li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.main-footer-title img {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.main-footer-institutions {
+    background-image: url('../images/footer-images/building.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main-footer-institutions {
+    width: 500px;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.main-footer-institutions h1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.main-footer-institutions i {
+    padding-right: 5px;
+}
+
+.main-footer-institutions ul li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.main-footer-copyright {
+    border-top: 1px solid #424a57;
+    padding: 25px 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
