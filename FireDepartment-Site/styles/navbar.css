@@ -20,10 +20,15 @@
 
 .main-nav a:hover {
     color: #808080;
+    font-weight: bold;
 }
 
 .web-site-name {
     display: inline;
+}
+
+.active {
+    font-weight: bold;
 }
 
 .fa {
