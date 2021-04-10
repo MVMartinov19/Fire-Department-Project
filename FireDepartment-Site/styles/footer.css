@@ -10,7 +10,7 @@
 }
 
 .main-footer-contacts {
-    background-image: url('../images/footer-images/world-map.png');
+    background-image: url('https://i.imgur.com/mG20K0b.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -52,7 +52,7 @@
 }
 
 .main-footer-institutions {
-    background-image: url('../images/footer-images/building.png');
+    background-image: url('https://i.imgur.com/IA9j8ie.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

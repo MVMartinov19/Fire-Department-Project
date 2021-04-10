@@ -5,19 +5,19 @@
 }
 
 .slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/swiper-images/swiper-1/fireman-swiper-1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/CNsC9au.png");
     background-position: center;
     background-size: cover;
 }
 
 .slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/swiper-images/swiper-1/fire-swiper-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/O9zrIvM.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/swiper-images/swiper-1/fire-truck-swiper-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/Pv2g4Cm.jpg");
     background-position: center;
     background-size: cover;
 }
