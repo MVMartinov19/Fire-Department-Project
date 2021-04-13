@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+body {
+    font-family: 'Jura', sans-serif;
+    background-color: gray;
+}
+
+.employees-label {
+    max-width: 1170px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.employees-label h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 5px solid #2d3e50;
+}
+
+.employees {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:600px) {
+    .employees {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.employee-card {
+    width: 500px;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 14px;
+}

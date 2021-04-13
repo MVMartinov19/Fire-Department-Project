@@ -9,11 +9,12 @@
 
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
-    <link rel="stylesheet" type="text/css" href="styles/resetCSS.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/swiper.css">
-    <link rel="stylesheet" type="text/css" href="styles/homePage.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../styles/employeePage.css">
+    <link rel="stylesheet" type="text/css" href="../styles/employeesCard.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,12 +27,12 @@
     <header class="main-header">
         <nav class="main-nav">
 
-            <a href="index.html">
+            <a href="../index.html">
                 <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
             </a>
-            <a class="active" href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+            <a href="../index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
             <a href="index.html" title="За да отидете към страницата със статистики, натиснете тук"><i class="fa fa-book"></i>Статистики</a>
-            <a href="pages/employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+            <a class="active" href="index.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
             <a href="index.html" title="За да отидете към страницата с графиците на нашите служители, натиснете тук"><i class="fa fa-table"></i>Графици</a>
             <a href="index.html" title="За да отидете към страницата 'За нас', натиснете тук"><i class="fa fa-address-card-o"></i>За нас</a>
             <a href="index.html" title="За да отидете към страницата с новини, натиснете тук"><i class="fa fa-newspaper-o"></i>Произшествия </a>
@@ -64,46 +65,49 @@
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
 
-
-    <section class="home-page-content">
-
-        <div class="content">
-            <h2>Великите пожарникари правят следното. Техните девизи са <br> „ Бъди подготвен” и „Адаптирай се и действай!”. С тези два девиза можете да бъдете успешни и да постигнете, каквото пожелаете в живота си.</h2>
-        </div>
-
+    <section class="employees-label">
+        <h1>Служители</h1>
     </section>
+    <section class="employees-section">
 
+        <div class="employees">
+            <div class="employee-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="../images/employeeCard.png">
+                    </div>
+                    <div class="content">
+                        <h2>Георги Костадинов</h2>
 
-    <section class="about-us-section">
+                    </div>
+                </div>
 
-        <h1>Районни служби</h1>
-
-        <div class="about-us">
-            <div class="about-us-box">
-                <h2>Първа РСПБЗН-Бургас</h2>
-                <p>
-                    8000 гр. Бургас, ул. „ Александър Велики” № 37 Б <br> <br> e_mail: rspbzn_burgas-01@mvr.bg <br> <br> Началник на Първа РСПБЗН-Бургас главен инспектор Николай Николаев <br> <br> приемен ден: вторник от 10:00 до 12:00 часа <br>
-                </p>
             </div>
+            <div class="employee-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="../images/employeeCard.png">
+                    </div>
+                    <div class="content">
+                        <h2>Георги Костадинов</h2>
 
-            <div class="about-us-box">
-                <img src="https://i.imgur.com/8gHZSdG.png" alt="logo">
+                    </div>
+                </div>
+
             </div>
+            <div class="employee-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="../images/employeeCard.png">
+                    </div>
+                    <div class="content">
+                        <h2>Георги Костадинов</h2>
 
-            <div class="about-us-box">
-                <h2>Втора РСПБЗН-Бургас</h2>
-                <p>
-                    8000 гр. Бургас, ул. „ Александър Велики” № 37 Б <br><br> e_mail: rspbzn_burgas-02@mvr.bg<br><br> Началник на Втора РСПБЗН-Бургас главен инспектор Деян Стоянов<br><br> приемен ден: вторник от 14:00 до 16:00 часа
-                </p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-
-
-    <section class="address-section">
-
-        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.73046864689275!2d27.466400184502124!3d42.49487437204942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1617973600438!5m2!1sbg!2sbg"
-            allowfullscreen="" loading="lazy"></iframe>
 
     </section>
 
@@ -143,7 +147,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+    <script src=" ../js/swiper.js"></script>
 
 
 </body>

@@ -1,0 +1,52 @@
+.employees-section .employees .employee-card .card {
+    max-width: 500px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 20px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.employees-section .employees .employee-card .card:hover {
+    cursor: pointer;
+    height: 420px;
+}
+
+.employees-section .employees .employee-card .card .img-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: auto;
+    z-index: 1;
+}
+
+.employees-section .employees .employee-card .card .img-box img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.employees-section .employees .employee-card .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    /* opacity: 0; */
+    transition: 0.3 ease-in-out;
+}
+
+.employees-section .employees .employee-card .card:hover .content {
+    visibility: visible;
+    /* opacity: 1; */
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.employees-section .employees .employee-card .card .content h2 {
+    font-weight: 600;
+    font-size: 25px;
+    border-bottom: 2px solid #2d3e50;
+}
