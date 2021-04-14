@@ -29,15 +29,6 @@ body {
     justify-content: space-around;
 }
 
-@media screen and (max-width:600px) {
-    .employees {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-}
-
 .employee-card {
     width: 500px;
     line-height: 1.5em;
