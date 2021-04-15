@@ -30,6 +30,20 @@
     height: 550px;
 }
 
+.slide2-employee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/9042HtE.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.slide3-employee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/dWsw76w.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
 .swiper-scrollbar-drag {
     transform: translate3d(0px, 107.8px, 0px);
     transition-duration: 0ms;
