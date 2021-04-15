@@ -89,19 +89,3 @@ body {
     margin-left: 90px;
     margin-top: 40px;
 }
-
-.address-section {
-    width: 100%;
-    border-top: 3px solid #000000;
-    border-bottom: 3px solid #000000;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding: 30px 20px; */
-    text-align: center;
-}
-
-.google-map {
-    width: 100%;
-    height: 60vh;
-    border: 0;
-}

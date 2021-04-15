@@ -10,7 +10,7 @@
 
 .employees-section .employees .employee-card .card:hover {
     cursor: pointer;
-    height: 420px;
+    height: 450px;
 }
 
 .employees-section .employees .employee-card .card .img-box {
