@@ -5,15 +5,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>РСПБЗН-Бургас</title>
+    <title>Статистики за произшествия - РСПБЗН</title>
 
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
-    <link rel="stylesheet" type="text/css" href="styles/resetCSS.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/swiper.css">
-    <link rel="stylesheet" type="text/css" href="styles/homePage.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../styles/employeesStatisticsPage.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,27 +22,26 @@
 </head>
 
 <body>
-
     <header class="main-header">
         <nav class="main-nav">
 
-            <a href="index.html">
+            <a href="../index.html">
                 <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
             </a>
-            <a class="active" href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+            <a href="../index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
             <div class="dropdown">
-                <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
+                <button class="dropdown-button active"><i class="fa fa-book"></i>Статистики </button>
                 <div class="dropdown-content">
                     <ul>
-                        <li> <a href="pages/accidentsStatisticsPage.html">Произшествия</a></li>
-                        <li> <a href="pages/employeesStatisticsPage.html">Служители</a></li>
+                        <li> <a href="accidentsStatisticsPage.html">Произшествия</a></li>
+                        <li> <a href="employeesStatisticsPage.html">Служители</a></li>
                     </ul>
 
 
                 </div>
             </div>
-            <a href="pages/employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
-            <a href="pages/schedulesPage.html" title="За да отидете към страницата с графиците на нашите служители, натиснете тук"><i class="fa fa-table"></i>Графици</a>
+            <a href="employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+            <a href="schedulesPage.html" title="За да отидете към страницата с графиците на нашите служители, натиснете тук"><i class="fa fa-table"></i>Графици</a>
             <a href="index.html" title="За да отидете към страницата 'За нас', натиснете тук"><i class="fa fa-address-card-o"></i>За нас</a>
             <div class="dropdown">
                 <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
@@ -58,15 +57,15 @@
         </nav>
     </header>
 
-    <!-- Slider main container -->
+    <!--Slider main container -->
     <div class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper" id="swiper-wrapper-8aaa6e4109c87696c" aria-live="polite">
             <div class="swiper-slide slide3 swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
             <!-- Slides -->
             <div class="swiper-slide slide1 swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
-            <div class="swiper-slide slide2 swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
-            <div class="swiper-slide slide3 swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
+            <div class="swiper-slide slide2 slide2-employee swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
+            <div class="swiper-slide slide3 slide3-employee swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
             <div class="swiper-slide slide1 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5"></div>
         </div>
         <!-- If we need pagination -->
@@ -83,48 +82,13 @@
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
 
-
-    <section class="home-page-content">
-
-        <div class="content">
-            <h2>Великите пожарникари правят следното. Техните девизи са <br> „ Бъди подготвен” и „Адаптирай се и действай!”. С тези два девиза можете да бъдете успешни и да постигнете, каквото пожелаете в живота си.</h2>
-        </div>
-
-    </section>
-
-
-    <section class="about-us-section">
-
-        <h1>Районни служби</h1>
-
-        <div class="about-us">
-            <div class="about-us-box">
-                <h2>Първа РСПБЗН-Бургас</h2>
-                <p>
-                    8000 гр. Бургас, ул. „ Александър Велики” № 37 Б <br> <br> e_mail: rspbzn_burgas-01@mvr.bg <br> <br> Началник на Първа РСПБЗН-Бургас главен инспектор Николай Николаев <br> <br> приемен ден: вторник от 10:00 до 12:00 часа <br>
-                </p>
-            </div>
-
-            <div class="about-us-box">
-                <img src="https://i.imgur.com/8gHZSdG.png" alt="logo">
-            </div>
-
-            <div class="about-us-box">
-                <h2>Втора РСПБЗН-Бургас</h2>
-                <p>
-                    8000 гр. Бургас, ул. „ Александър Велики” № 37 Б <br><br> e_mail: rspbzn_burgas-02@mvr.bg<br><br> Началник на Втора РСПБЗН-Бургас главен инспектор Деян Стоянов<br><br> приемен ден: вторник от 14:00 до 16:00 часа
-                </p>
-            </div>
-        </div>
-    </section>
-
-
     <section class="address-section">
 
         <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.73046864689275!2d27.466400184502124!3d42.49487437204942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1617973600438!5m2!1sbg!2sbg"
             allowfullscreen="" loading="lazy"></iframe>
 
     </section>
+
 
     <footer class="main-footer">
         <div class="main-footer-content">
@@ -136,6 +100,7 @@
                     <li><i class="fa fa-building-o"></i>Втора РСПБЗН-Бургас</li>
                     <li><i class="fa fa-phone"></i>тел: 056/856285</li>
                     <li><i class="fa fa-ambulance"></i>тел. за Спешно повеикване: 160</li>
+
                 </ul>
             </div>
 
@@ -162,8 +127,12 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+    <script src=" ../js/swiper.js"></script>
 
+
+</body>
+
+</html>
 </body>
 
 </html>
