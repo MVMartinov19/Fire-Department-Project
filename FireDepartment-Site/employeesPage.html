@@ -9,12 +9,12 @@
 
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
-    <link rel="stylesheet" type="text/css" href="../styles/resetCSS.css">
-    <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../styles/swiper.css">
-    <link rel="stylesheet" type="text/css" href="../styles/employeePage.css">
-    <link rel="stylesheet" type="text/css" href="../styles/employeesCard.css">
-    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/swiper.css">
+    <link rel="stylesheet" type="text/css" href="styles/employeePage.css">
+    <link rel="stylesheet" type="text/css" href="styles/employeesCard.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,10 +27,12 @@
     <header class="main-header">
         <nav class="main-nav">
 
-            <a href="../index.html">
+            <a href="index.html">
                 <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
             </a>
-            <a href="../index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+
+            <a class="active" href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+
             <div class="dropdown">
                 <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
                 <div class="dropdown-content">
@@ -42,9 +44,20 @@
 
                 </div>
             </div>
-            <a class="active" href="employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
-            <a href="schedulesPage.html" title="За да отидете към страницата с графиците на нашите служители, натиснете тук"><i class="fa fa-table"></i>Графици</a>
-            <a href="index.html" title="За да отидете към страницата 'За нас', натиснете тук"><i class="fa fa-address-card-o"></i>За нас</a>
+            <a href="employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button"><i class="fa fa-book"></i>Информация </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="accidentsStatisticsPage.html">За пожарните коли</a></li>
+                        <li> <a href="employeesStatisticsPage.html">За пожарогасителите</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
             <div class="dropdown">
                 <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
                 <div class="dropdown-content">
@@ -754,7 +767,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src=" ../js/swiper.js"></script>
+    <script src="js/swiper.js"></script>
 
 
 </body>
