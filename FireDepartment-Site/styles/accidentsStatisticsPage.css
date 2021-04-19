@@ -61,88 +61,17 @@ body {
     padding: 14px;
 }
 
-
-/* .teams-section {
-    border-top: 3px solid #000000;
-    box-sizing: border-box;
-    background-color: #2d333d;
-    margin-top: 30px;
-}
-
-.teams-section h1 {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    color: white;
-}
-
-.teams {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.teams h2 {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 40px;
-    font-weight: 600;
-    border-bottom: 5px solid #cfd6dd;
-    text-align: center;
-    color: white;
-}
-
-.teams-box {
-    width: 500px;
-    line-height: 1.5em;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding: 14px;
-}
-
-.teams-box h2 {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 36px;
-    font-weight: 600;
-    border-bottom: 5px solid #cfd6dd;
-    text-align: center;
-    color: white;
-}
-
-.teams-box p {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 5px solid #cfd6dd;
-    text-align: center;
-    color: white;
-}
-
-.teams-box img {
-    width: 300px;
-    margin-left: 90px;
-    margin-top: 40px;
-}
-
-.second-employees {
-    background-color: #2d333d;
-}
-
-.employees-label-second {
-    max-width: 1170px;
+.table-section {
+    border-top: 3px solid black;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px;
     text-align: center;
+    background-color: #2d3e50;
 }
 
-.employees-label-second h1 {
+.table-section h1 {
     display: inline-block;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -150,4 +79,4 @@ body {
     font-weight: 600;
     border-bottom: 5px solid #ffffff;
     color: #ffffff;
-} */
+}
