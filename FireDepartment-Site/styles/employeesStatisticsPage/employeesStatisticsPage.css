@@ -3,3 +3,56 @@ body {
     font-family: 'Jura', sans-serif;
     background-color: gray;
 }
+
+.employees-statistics-label-first {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.employees-statistics-label-first h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 5px solid #ffffff;
+    color: #ffffff;
+}
+
+.employees-statistics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.employees-statistics-card {
+    width: 500px;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.table-section {
+    border-top: 3px solid black;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #2d3e50;
+}
+
+.table-section h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 5px solid #ffffff;
+    color: #ffffff;
+}
