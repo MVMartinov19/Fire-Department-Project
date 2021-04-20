@@ -22,23 +22,6 @@ body {
     color: #ffffff;
 }
 
-.employees-label {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.employees-label h1 {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 40px;
-    font-weight: 600;
-    border-bottom: 5px solid #2d3e50;
-}
-
 .accidents-statistics {
     display: flex;
     flex-direction: row;
