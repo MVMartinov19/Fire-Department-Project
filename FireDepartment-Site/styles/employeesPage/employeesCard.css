@@ -34,13 +34,11 @@
     text-align: center;
     color: #111;
     visibility: hidden;
-    /* opacity: 0; */
     transition: 0.3 ease-in-out;
 }
 
 .employees-section .employees .employee-card .card:hover .content {
     visibility: visible;
-    /* opacity: 1; */
     margin-top: -40px;
     transition-delay: 0.3s;
 }
