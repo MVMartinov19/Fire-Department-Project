@@ -9,11 +9,11 @@
 
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
-    <link rel="stylesheet" type="text/css" href="styles/resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/swiper.css">
-    <link rel="stylesheet" type="text/css" href="styles/fireExtinguisherInfoPage/fireExtinguisherInfoPage.css">
-    <link rel="stylesheet" type="text/css" href="styles/fireExtinguisherInfoPage/fireExtinguisherInfoCard.css">
+    <link rel="stylesheet" type="text/css" href="styles/fire-trucks-info-page/fire-trucks-info-page.css">
+    <link rel="stylesheet" type="text/css" href="styles/fire-trucks-info-page/fire-trucks-card.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
 
@@ -31,27 +31,27 @@
                 <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
             </a>
 
-            <a href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home"></i>Начало</a>
+            <a href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
 
             <div class="dropdown">
                 <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
                 <div class="dropdown-content">
                     <ul>
-                        <li> <a href="accidentsStatisticsPage.html">Произшествия</a></li>
-                        <li> <a href="employeesStatisticsPage.html">Служители</a></li>
+                        <li> <a href="accidents-statistics-page.html">Произшествия</a></li>
+                        <li> <a href="employees-statistics-page.html">Служители</a></li>
                     </ul>
 
 
                 </div>
             </div>
-            <a href="employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+            <a href="employees-page.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
 
             <div class="dropdown">
-                <button class="dropdown-button "><i class="fa fa-info-circle active"></i>Информация</button>
+                <button class="dropdown-button active"><i class="fa fa-info-circle"></i>Информация </button>
                 <div class="dropdown-content">
                     <ul>
-                        <li> <a href="fireTrucksInfoPage.html">За пожарните коли</a></li>
-                        <li> <a href="fireExtinguisherInfoPage.html">За пожарогасителите</a></li>
+                        <li> <a href="fire-trucks-info-page.html">За пожарните коли</a></li>
+                        <li> <a href="fire-extinguisher-info-page.html">За пожарогасителите</a></li>
                     </ul>
 
 
@@ -59,10 +59,10 @@
             </div>
 
             <div class="dropdown">
-                <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <button class="dropdown-button "><i class="fa fa-newspaper-o"></i> Произшествия </button>
                 <div class="dropdown-content">
                     <ul>
-                        <li> <a href="registrationForAccidents.html">Регистрация</a></li>
+                        <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
                         <li> <a href="#">Регистрирани</a></li>
                     </ul>
 
@@ -72,6 +72,7 @@
         </nav>
     </header>
 
+
     <!-- Slider main container -->
     <div class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
         <!-- Additional required wrapper -->
@@ -79,8 +80,8 @@
             <div class="swiper-slide slide3 swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
             <!-- Slides -->
             <div class="swiper-slide slide1 swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
-            <div class="swiper-slide slide2 swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
-            <div class="swiper-slide slide3 swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
+            <div class="swiper-slide slide2-fire-trucks swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
+            <div class="swiper-slide slide3-fire-trucks swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
             <div class="swiper-slide slide1 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5"></div>
         </div>
         <!-- If we need pagination -->
@@ -98,7 +99,7 @@
     </div>
 
     <section class="info-label-first">
-        <h1>Информация за пожарогасителите</h1>
+        <h1>Информация за пожарните коли</h1>
     </section>
     <section class="info-section ">
 
@@ -107,14 +108,14 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/Ay3k0IO.jpg">
+                        <img src="https://i.imgur.com/x3EXyUf.jpg">
                     </div>
                     <div class="content">
-                        <h2>Вътрешен пожарен кран</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: ✗</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✓</p> <br>
-                        <p class="info">Забележка: Състои се от шланг с дължина 20 м., струйник, спирателен кран</p> <br>
+                        <h2>Противопожарни автомобили - тежък клас</h2>
+                        <p class="info first">Помпа: Ruberg</p> <br>
+                        <p class="info">Резервоар за вода: > 6 000 l </p> <br>
+                        <p class="info">Резервоар за пенообразувател: > 600 l</p> <br>
+                        <p class="info">Стандартизация: EN 1846</p> <br>
 
 
                     </div>
@@ -125,14 +126,14 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/YYDRDRQ.jpg">
+                        <img src="https://i.imgur.com/P5kMCJx.jpg">
                     </div>
                     <div class="content">
-                        <h2>Кофпомпа</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: Ограничен</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✓</p> <br>
-                        <p class="info">Забележка: С кофпомпата работят двама или трима души. Първият помпа, вторият насочва струята към пожара, а ако има нужда третият я зарежда с вода. </p> <br>
+                        <h2>Противопожарни автомобили - среден клас</h2>
+                        <p class="info first">Помпа: За нормално и високо налягане</p> <br>
+                        <p class="info">Резервоар за вода: 2500 - 4 000 литра</p> <br>
+                        <p class="info">Резервоар за пенообразувател: 250 - 400 l</p> <br>
+                        <p class="info">Стандартизация: EN 1846</p> <br>
 
                     </div>
                 </div>
@@ -141,14 +142,14 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/sZ3EYjz.jpg">
+                        <img src="https://i.imgur.com/tGR00d5.jpg">
                     </div>
                     <div class="content">
-                        <h2>Пожарогасител с вода</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: ✗</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✗</p> <br>
-                        <p class="info">Забележка: Опасно е да се ползва за запалими течности, ел. уреди и масла</p> <br>
+                        <h2>Противопожарни автомобили - лек клас</h2>
+                        <p class="info first">Помпа: За нормално, високо налягане или моторна помпа </p> <br>
+                        <p class="info">Резервоар за вода: до 100 l</p> <br>
+                        <p class="info">Резервоар за пенообразувател: 250 - 400 l</p> <br>
+                        <p class="info">Стандартизация: EN 1846</p> <br>
 
                     </div>
                 </div>
@@ -157,14 +158,13 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/usvSw0Z.jpg">
+                        <img src="https://i.imgur.com/eNdr0el.jpg">
                     </div>
                     <div class="content">
-                        <h2>Пожарогасител с въглероден диоксид</h2>
-                        <p class="info first">Вода, дърво и платмаса: Ограничен </p> <br>
-                        <p class="info">Запалими течности и газове: Ограничен</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✗</p> <br>
-                        <p class="info">Забележка: Не е подходящ за открит пожар или такъв тлеещ от клас А</p> <br>
+                        <h2>Високопроходим автомобил със система за пожарогасене</h2>
+                        <p class="info first">Мобилна система за пожарогасене с високо налягане: Fireco EP040L50B</p> <br>
+                        <p class="info">Резервоар за вода: 380 l </p> <br>
+                        <p class="info">Бензинова моторна помпа за високо налягане: Дебит 42l/min при наляганеот 100 bar</p> <br>
 
                     </div>
                 </div>
@@ -175,32 +175,14 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/ZjrKRGn.jpg">
+                        <img src="https://i.imgur.com/8f8z1x8.jpg">
                     </div>
                     <div class="content">
-                        <h2>Пожарогасител с изпарителна течност</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: Ограничен</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✗</p> <br>
-                        <p class="info">Забележка: Трябва да се провери спецификацията на агента за гасене, нужно е да се прави обслужване на всеки 5 години </p> <br>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="info-card">
-                <div class="card">
-                    <div class="img-box">
-                        <img src="https://i.imgur.com/I2LtpQb.jpg">
-                    </div>
-                    <div class="content">
-                        <h2>Водопеннен пожарогасител</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности: ✓ (без газове)</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✗</p> <br>
-                        <p class="info">Забележка: Опасно е използването му за ел. инсталации </p> <br>
-
+                        <h2>Мобилна система за гасене на горски пожари </h2>
+                        <p class="info first">Помпа: бензинова, Davey Firefighter® Pro</p> <br>
+                        <p class="info">Резервоар за вода: 350 l</p> <br>
+                        <p class="info">Резервоар за пенообразувател: 30 l</p> <br>
+                        <p class="info">Стандартизация: EN 1846</p> <br>
 
                     </div>
                 </div>
@@ -210,32 +192,14 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/GSRqk14.jpg">
+                        <img src="https://i.imgur.com/Er58L8M.jpg">
                     </div>
                     <div class="content">
-                        <h2>Пожарогасител с вода и химикали</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: ✗</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✓</p> <br>
-                        <p class="info">Забележка: Опасно е използването му за ел. инсталации </p> <br>
-
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="info-card">
-                <div class="card">
-                    <div class="img-box">
-                        <img src="https://i.imgur.com/g2YChk2.jpg">
-                    </div>
-                    <div class="content">
-                        <h2>Пожарогасител с прах ABC</h2>
-                        <p class="info first">Вода, дърво и платмаса: ✓</p> <br>
-                        <p class="info">Запалими течности и газове: ✓</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✗</p> <br>
-                        <p class="info">Забележка: Преди употреба да се провери дали пише ABC или BC, тъй като има разлика </p> <br>
+                        <h2>Индустриални противопожарни автомобили</h2>
+                        <p class="info first">Помпа: За нормално налягане</p> <br>
+                        <p class="info">Резервоар за вода: 2500 - 6 000 литра</p> <br>
+                        <p class="info">Резервоар за пенообразувател: 250 - 400 литра</p> <br>
+                        <p class="info">Стандартизация: EN 1846</p> <br>
 
 
 
@@ -247,14 +211,52 @@
             <div class="info-card">
                 <div class="card">
                     <div class="img-box">
-                        <img src="https://i.imgur.com/ld8f9Jw.jpg">
+                        <img src="https://i.imgur.com/7vscd6F.jpg">
                     </div>
                     <div class="content">
-                        <h2>Пожарно одеало</h2>
-                        <p class="info first">Вода, дърво и платмаса: Ограничен</p> <br>
-                        <p class="info">Запалими течности и газове: Ограничен</p> <br>
-                        <p class="info">Готварски масла и мазнини: ✓</p> <br>
-                        <p class="info">Забележка: Използва се, за да управлява пожара и като бариера от топлината му </p> <br>
+                        <h2>Влекач - тежковоз</h2>
+                        <p class="info first">Полезен товар: 25 000 кг; 46 000 кг. и др.</p> <br>
+                        <p class="info">Пълна маса: 50 100 кг.</p> <br>
+                        <p class="info">Мощност: 353 kW</p> <br>
+                        <p class="info">Обща дължина: до 16 м </p> <br>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="https://i.imgur.com/xXr2DEE.jpg">
+                    </div>
+                    <div class="content">
+                        <h2>Летищни аварийно – спасителни противопожарни автомобили</h2>
+                        <p class="info first">Пожарна помпа: Ziegler 8 000 l/min</p> <br>
+                        <p class="info">Резервоар за вода: 12 000 l</p> <br>
+                        <p class="info">Резервоар за пенообразувател: 1 450 l</p> <br>
+                        <p class="info">Стандартизация: EN 1846, NFPA, ICAO </p> <br>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-card">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="https://i.imgur.com/EAyBPR2.jpg">
+                    </div>
+                    <div class="content">
+                        <h2>Високопроходим всъдеход - Амфибия</h2>
+                        <p class="info first">Двигател: Cummins 185 hp</p> <br>
+                        <p class="info">Максимално общо тегло: 6 650 kg</p> <br>
+                        <p class="info">Скорост на придвижване във вода: 5 km/h</p> <br>
+                        <p class="info">Скорост по суша: 45 km/h </p> <br>
 
 
 
@@ -267,6 +269,7 @@
         </div>
 
     </section>
+
 
     <section class="address-section">
 
