@@ -1,6 +1,6 @@
 .info-section .info .info-card .card {
     max-width: 600px;
-    height: 550px;
+    height: 650px;
     background: rgb(204, 204, 204);
     margin: 30px 10px;
     padding: 20px 20px;
@@ -10,7 +10,7 @@
 .info-section .info .info-card .card .img-box {
     position: relative;
     width: 350px;
-    height: 260px;
+    height: 350px;
     top: -60px;
     left: auto;
     z-index: 1;
