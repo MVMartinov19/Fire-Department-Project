@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+body {
+    font-family: 'Jura', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/wBmNpB4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.registration {
+    width: 85%;
+    max-width: 600px;
+    background-image: linear-gradient(to right, #a7a6a6, #afaaaa, #a7a6a6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.registration h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-register {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.form-register label {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.form-register input,
+.form-register select {
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.form-register select:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    background-color: gray;
+    padding: 14px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #5c5858;
+}

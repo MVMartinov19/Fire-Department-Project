@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистики за произшествия - РСПБЗН</title>
+
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/registrationForAccidents/registration.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+
+            <a href="index.html">
+                <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
+            </a>
+
+            <a href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="accidentsStatisticsPage.html">Произшествия</a></li>
+                        <li> <a href="employeesStatisticsPage.html">Служители</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <a href="employeesPage.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button"><i class="fa fa-info-circle"></i>Информация </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="fireTrucksInfoPage.html">За пожарните коли</a></li>
+                        <li> <a href="fireExtinguisherInfoPage.html">За пожарогасителите</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button active"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="#">Регистрация</a></li>
+                        <li> <a href="#">Регистрирани</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="registration">
+        <h1>Регистрация на произшествие</h1>
+        <form id="form" method="post">
+
+            <div class="form-register">
+                <label for="office">Изберете служба:</label> <br>
+                <select name="office" id="office">
+                    <option value="Първа РСПБЗН Бургас">Първа РСПБЗН Бургас</option>
+                    <option value="Втора РСПБЗН Бургас">Втора РСПБЗН Бургас</option>
+                </select>
+            </div>
+
+            <div class="form-register">
+                <label for="team">Изберете екип:</label>
+                <select name="team" id="team">
+                <option value="Син екип">Син екип</option>
+                <option value="Червен екип">Червен екип</option>
+                <option value="Зелен екип">Зелен екип</option>
+                </select>
+            </div>
+
+            <div class="form-register">
+                <label for="truck">Изберете автомобил:</label>
+                <select name="truck" id="truck">
+                    <option value="Противопожарен автомобил - тежък клас">Противопожарен автомобил - тежък клас </option>
+                    <option value="Противопожарен автомобил - среден клас ">Противопожарен автомобил - среден клас  </option>
+                    <option value="Противопожарен автомобил - лек клас">Противопожарен автомобил - лек клас </option>
+                    <option value="Високопроходим автомобил със система за пожарогасене">Високопроходим автомобил със система за пожарогасене</option>
+                    <option value="Мобилна система за гасене на горски пожари">Мобилна система за гасене на горски пожари</option>
+                    <option value="Индустриален противопожарен автомобил">Индустриален противопожарен автомобил</option>
+                    <option value="Влекач - тежковоз">Влекач - тежковоз</option>
+                    <option value="Летищен авариен – спасителен противопожарен автомобил">Летищен авариен – спасителен противопожарен автомобил</option>
+                    <option value="Високопроходим всъдеход - Амфибия">Високопроходим всъдеход - Амфибия</option>
+                </select>
+            </div>
+
+            <div class="form-register">
+                <label for="location">Изберете място на произшествието:</label>
+                <select name="location" id="location">
+                    <option value="кв. Рудник">кв. Рудник </option>
+                    <option value="кв. Победа">кв. Победа </option>
+                    <option value="кв. Черно море">кв. Черно море</option>
+                    <option value="кв. Ветрен">кв. Ветрен</option>
+                    <option value="Банево">Банево</option>
+                    <option value="Горно Езерово">Горно Езерово</option>
+                    <option value="Долно Езерово">Долно Езерово</option>
+                    <option value="Крайморие">Крайморие</option>
+                    <option value="Сарафово">Сарафово</option>
+                    <option value="ж.к Меден Рудник">ж.к Меден Рудник</option>
+                    <option value="ж.к Възраждане">ж.к Възраждане</option>
+                    <option value="ж.к Лазур">ж.к Лазур</option>
+                    <option value="ж.к Славейков">ж.к Славейков</option>
+                    <option value="ж.к Изгрев">ж.к Изгрев</option>
+                    <option value="ж.к Зорница">ж.к Зорница</option>
+                    <option value="ж.к Братя Миладинови">ж.к Зорница</option>
+                </select>
+            </div>
+
+
+
+
+            <div class="form-register">
+                <label for="adress">Въведете адрес:</label>
+                <input type="text" name="location">
+            </div>
+
+            <div class="form-register">
+                <label for="date">Въведете дата:</label>
+                <input id="date" type="date" name="date">
+            </div>
+
+
+
+
+
+            <button class="button" type="button">Регистрирай</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
