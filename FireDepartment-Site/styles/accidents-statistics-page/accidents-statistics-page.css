@@ -5,7 +5,7 @@ body {
 }
 
 .accidents-statistics-first {
-    background-image: url("https://media.discordapp.net/attachments/722478446311112775/835541315210969129/fire-removebg.jpg?width=1202&height=676");
+    background-image: url("https://i.imgur.com/nfECrQL.jpg");
     background-position: center;
     border-bottom: 3px solid #000000;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px 20px;
+    padding: 35px 20px;
     text-align: center;
 }
 
@@ -50,23 +50,23 @@ body {
     border-top: 3px solid black;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 20px;
+    padding: 50px 20px;
     text-align: center;
     background-image: linear-gradient(to right, #555555, #606060);
 }
 
-.accidents-statistics-label-second {
+.statistics-label {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
-.accidents-statistics-label-second h1 {
+.statistics-label h1 {
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     border-bottom: 5px solid #ffffff;
     color: #ffffff;
