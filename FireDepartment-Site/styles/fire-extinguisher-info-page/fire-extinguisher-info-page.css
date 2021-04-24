@@ -4,6 +4,13 @@ body {
     background-color: gray;
 }
 
+.fire-extinguishers-info {
+    background-image: url("https://i.imgur.com/9OjSNJf.png");
+    background-position: center;
+    border-bottom: 3px solid #000000;
+    box-sizing: border-box;
+}
+
 .info-label-first {
     max-width: 1170px;
     margin-left: auto;
@@ -15,10 +22,11 @@ body {
 .info-label-first h1 {
     display: inline-block;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
-    border-bottom: 5px solid #2d3e50;
+    border-bottom: 5px solid #ffffff;
+    color: #ffffff;
+    font-style: italic;
 }
 
 .info {
