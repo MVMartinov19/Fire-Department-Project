@@ -18,10 +18,6 @@ td {
     padding: 12px;
 }
 
-thead tr {
-    background-color: #353535;
-}
-
 tr:nth-child(even) {
     background-color: #919191
 }
