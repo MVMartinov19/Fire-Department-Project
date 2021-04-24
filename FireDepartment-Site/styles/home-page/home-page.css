@@ -5,7 +5,7 @@ body {
 }
 
 .home-page-content {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/9OjSNJf.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.imgur.com/9OjSNJf.png");
     background-position: center;
     background-size: cover;
     margin-left: auto;
@@ -26,7 +26,7 @@ body {
 }
 
 .about-us-section {
-    background-image: linear-gradient(to right, #383737, #3b3a3ae5);
+    background-image: linear-gradient(to right, #2b2929, #2c2b2be5);
     border-top: 3px solid #000000;
     box-sizing: border-box;
     padding-bottom: 45px;
@@ -34,7 +34,7 @@ body {
 
 .about-us-section h1 {
     margin-bottom: 20px;
-    padding: 60px 20px;
+    padding: 50px 20px;
     font-size: 50px;
     font-weight: 600;
     text-align: center;
