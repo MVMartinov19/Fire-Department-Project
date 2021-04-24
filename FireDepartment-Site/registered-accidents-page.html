@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистики за произшествия - РСПБЗН</title>
+
+    <!--<link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/registration-for-accidents-page/registration-for-accidents.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+
+            <a href="index.html">
+                <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
+            </a>
+
+            <a href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="accidents-statistics-page.html">Произшествия</a></li>
+                        <li> <a href="employees-statistics-page.html">Служители</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <a href="employees-page.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button"><i class="fa fa-info-circle"></i>Информация </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="fire-trucks-info-page.html">За пожарните коли</a></li>
+                        <li> <a href="fire-extinguisher-info-page.html">За пожарогасителите</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button active"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
+                        <li> <a href="registered-accidents-page.html">Регистрирани</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <p id="alertEmptyAccidents">Няма регистрирани инциденти</p>
+    <table id="accidentsTable" border="1"></table>
+    <button type="button" onclick="clearData()">Clear</button>
+
+
+
+
+    <script src="js/registration.js"></script>
+</body>
+
+</html>
