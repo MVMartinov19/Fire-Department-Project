@@ -14,8 +14,7 @@ function checkIsAccidents() {
     if (localStorage.getItem('accidentsData')) {
         accidentsDataArray = JSON.parse(localStorage.getItem('accidentsData'));
         if (alertEmptyAccidents) alertEmptyAccidents.style.display = 'none';
-    }
-    else {
+    } else {
         accidentsDataArray = [];
         if (alertEmptyAccidents) alertEmptyAccidents.style.display = 'block';
     }
@@ -37,12 +36,16 @@ function onSubmit() {
 function showTableData() {
     const table = document.getElementById('accidentsTable');
     if (JSON.parse(localStorage.getItem('accidentsData')) && table) {
-        JSON.parse(localStorage.getItem('accidentsData')).forEach((item) => {table.innerHTML += `<tr><td>${item.office}</td>
+        JSON.parse(localStorage.getItem('accidentsData')).forEach((item) => { table.innerHTML += `<tr><td>${item.office}</td>
                                                                                                      <td>${item.team}</td>
                                                                                                      <td>${item.truck}</td>
                                                                                                      <td>${item.location}</td>
                                                                                                      <td>${item.address}</td>
-                                                                                                     <td>${item.date}</td></tr>`;});
+                                                                                                     <td>${item.date}</td></tr>`; });
+    } else {
+        alertClearAccidents.style.display = 'none';
+        alertEmptyAccidents.style.display = 'block';
+        table.style.display = 'none';
     }
 }
 

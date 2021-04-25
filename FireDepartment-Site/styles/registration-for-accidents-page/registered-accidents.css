@@ -39,6 +39,21 @@
         font-style: italic;
     }
     
+    .clear-button {
+        width: 100%;
+        background-color: #464343;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 18px;
+        border: none;
+        margin-top: 15px;
+    }
+    
+    .clear-button:hover {
+        cursor: pointer;
+        background-color: #2c2929;
+    }
+    
     .about-us-section {
         background-image: linear-gradient(to right, #2b2929, #2c2b2be5);
         border-top: 3px solid #000000;
