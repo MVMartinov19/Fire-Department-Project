@@ -4,60 +4,45 @@ let accidentData = {
     truck: '',
     location: '',
     address: '',
-    date: '',
+    date: ''
 };
 
 let accidentsDataArray = [];
 
+function checkIsAccidents() {
+    const alertEmptyAccidents = document.getElementById('alertEmptyAccidents');
+    if (localStorage.getItem('accidentsData')) {
+        accidentsDataArray = JSON.parse(localStorage.getItem('accidentsData'));
+        if (alertEmptyAccidents) alertEmptyAccidents.style.display = 'none';
+    }
+    else {
+        accidentsDataArray = [];
+        if (alertEmptyAccidents) alertEmptyAccidents.style.display = 'block';
+    }
+}
+
 function onSubmit() {
-    let officeValue = document.getElementById('office').value;
-    let teamValue = document.getElementById('team').value;
-    let truckValue = document.getElementById('truck').value;
-    let locationValue = document.getElementById('location').value;
-    let addressValue = document.getElementById('address').value;
-    let dateValue = document.getElementById('date').value;
-
     accidentData = {
-        office: officeValue,
-        team: teamValue,
-        truck: truckValue,
-        location: locationValue,
-        address: addressValue,
-        date: dateValue
+        office: document.getElementById('office').value,
+        team: document.getElementById('team').value,
+        truck: document.getElementById('truck').value,
+        location: document.getElementById('location').value,
+        address: document.getElementById('address').value,
+        date: document.getElementById('date').value
     };
-
     accidentsDataArray.push(accidentData);
-
-    localStorage.setItem('accidentsData', JSON.stringify(accidentsDataArray));
+    localStorage.setItem('accidentsData', JSON.stringify(accidentsDataArray)); // Превръщам дейтата в стринг за да се запази в локъл сторидж
 }
 
 function showTableData() {
-    let table = document.getElementById('accidentsTable');
-    let alertEmptyAccidents = document.getElementById('alertEmptyAccidents');
-    let alertClearAccidents = document.getElementById('alertClearAccidents');
-    if (JSON.parse(localStorage.getItem('accidentsData'))) {
-        if (JSON.parse(localStorage.getItem('accidentsData')) && table) {
-            JSON.parse(localStorage.getItem('accidentsData')).forEach((item) => { table.innerHTML += `<tr><td>${item.office}</td>
+    const table = document.getElementById('accidentsTable');
+    if (JSON.parse(localStorage.getItem('accidentsData')) && table) {
+        JSON.parse(localStorage.getItem('accidentsData')).forEach((item) => {table.innerHTML += `<tr><td>${item.office}</td>
                                                                                                      <td>${item.team}</td>
                                                                                                      <td>${item.truck}</td>
                                                                                                      <td>${item.location}</td>
                                                                                                      <td>${item.address}</td>
-                                                                                                     <td>${item.date}</td></tr>`; });
-        }
-        if (alertEmptyAccidents) {
-            alertEmptyAccidents.style.display = 'none';
-
-        }
-
-    } else {
-        accidentsDataArray = [];
-        table.style.display = 'none';
-        alertClearAccidents.style.display = 'none';
-        if (alertEmptyAccidents) {
-            alertEmptyAccidents.style.display = 'block';
-
-        }
-
+                                                                                                     <td>${item.date}</td></tr>`;});
     }
 }
 
@@ -66,7 +51,7 @@ function clearData() {
     document.getElementById('accidentsTable').innerHTML = '';
     alertClearAccidents.style.display = 'none';
     alertEmptyAccidents.style.display = 'block';
-
 }
 
+checkIsAccidents();
 showTableData();
