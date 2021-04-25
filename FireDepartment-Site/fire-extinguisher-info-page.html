@@ -20,18 +20,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/navbar.js" defer></script>
 </head>
 
 <body>
 
     <header class="main-header">
+
         <nav class="main-nav">
 
-            <a href="index.html">
-                <h1 class="web-site-name" title="За да отидете към началната страница, натиснете тук">РСПБЗН - Бургас</h1>
-            </a>
 
-            <a href="index.html" title="За да отидете към началната страница, натиснете тук"><i class="fa fa-home active"></i>Начало</a>
+            <a href="index.html">
+                <h1 class="web-site-name">РСПБЗН - Бургас</h1>
+            </a>
+            <a href="index.html"><i class="fa fa-home active"></i>Начало</a>
 
             <div class="dropdown">
                 <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
@@ -44,7 +49,7 @@
 
                 </div>
             </div>
-            <a href="employees-page.html" title="За да отидете към страницата със служителите на РСПБЗН-Бургас, натиснете тук"><i class="fa fa-user"></i>Служители</a>
+            <a href="employees-page.html"><i class="fa fa-user"></i>Служители</a>
 
             <div class="dropdown">
                 <button class="dropdown-button active"><i class="fa fa-info-circle"></i>Информация </button>
@@ -59,7 +64,7 @@
             </div>
 
             <div class="dropdown">
-                <button class="dropdown-button "><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
                 <div class="dropdown-content">
                     <ul>
                         <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
@@ -69,8 +74,28 @@
 
                 </div>
             </div>
+
         </nav>
+
+        <a href="javascript:void(0))"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
+        <a href="javascript:void(0);" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html">Начало</a> </li>
+                <li><a href="accidents-statistics-page.html">Статистики - произшествия</a></li>
+                <li><a href="employees-statistics-page.html">Статистики - служители</a></li>
+                <li><a href="employees-page.html">Служители</a></li>
+                <li><a href="fire-trucks-info-page.html">Информация за пожарните коли</a></li>
+                <li><a class="active" href="fire-extinguisher-info-page.html">Информация за пожарогасителите</a></li>
+                <li><a href="registration-for-accidents-page.html">Регистрация на произшествие</a></li>
+                <li><a href="registered-accidents-page.html">Регистрирани произшествия</a></li>
+            </ul>
+
+        </nav>
+
+
     </header>
+
 
 
     <!-- Slider main container -->
@@ -315,8 +340,7 @@
 
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
+
 
 </body>
 
