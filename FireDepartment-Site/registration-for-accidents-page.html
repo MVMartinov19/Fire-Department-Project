@@ -69,30 +69,37 @@
 
     <div class="registration">
         <h1>Регистрация на произшествие</h1>
-        <form id="form" method="post">
+        <form id="form" method="post" onsubmit="onValidate()">
 
             <div class="form-register">
-                <label for="office">Изберете служба:</label> <br>
-                <select name="office" id="office">
+                <label for="office">*Изберете служба:</label> <br>
+                <select onblur="onFocusOut('office')" class="form-control" name="office" id="office">
+                    <option value=""></option>
                     <option value="Първа РСПБЗН Бургас">Първа РСПБЗН Бургас</option>
                     <option value="Втора РСПБЗН Бургас">Втора РСПБЗН Бургас</option>
                 </select>
+
+
             </div>
+            <p id="officeMessage">*Това поле е задължително</p>
 
             <div class="form-register">
-                <label for="team">Изберете екип:</label>
-                <select name="team" id="team">
+                <label for="team">*Изберете екип:</label>
+                <select onblur="onFocusOut('team')" class="form-control" name="team" id="team">
+                <option value=""></option>
                 <option value="Син екип">Син екип</option>
                 <option value="Червен екип">Червен екип</option>
                 <option value="Зелен екип">Зелен екип</option>
                 </select>
             </div>
+            <p id="teamMessage">*Това поле е задължително</p>
 
             <div class="form-register">
-                <label for="truck">Изберете автомобил:</label>
-                <select name="truck" id="truck">
+                <label for="">*Изберете автомобил:</label>
+                <select onblur="onFocusOut('truck')" class="form-control" name="truck" id="truck">
+                    <option value=""></option>
                     <option value="Противопожарен автомобил - тежък клас">Противопожарен автомобил - тежък клас </option>
-                    <option value="Противопожарен автомобил - среден клас ">Противопожарен автомобил - среден клас  </option>
+                    <option value="Противопожарен автомобил - среден клас ">Противопожарен автомобил - среден клас </option>
                     <option value="Противопожарен автомобил - лек клас">Противопожарен автомобил - лек клас </option>
                     <option value="Високопроходим автомобил със система за пожарогасене">Високопроходим автомобил със система за пожарогасене</option>
                     <option value="Мобилна система за гасене на горски пожари">Мобилна система за гасене на горски пожари</option>
@@ -102,10 +109,11 @@
                     <option value="Високопроходим всъдеход - Амфибия">Високопроходим всъдеход - Амфибия</option>
                 </select>
             </div>
-
+            <p id="truckMessage">*Това поле е задължително</p>
             <div class="form-register">
-                <label for="location">Изберете място на произшествието:</label>
-                <select name="location" id="location">
+                <label for="location">*Изберете място на произшествието:</label>
+                <select onblur="onFocusOut('location')" class="form-control" name="location" id="location">
+                    <option value=""></option>
                     <option value="кв. Рудник">кв. Рудник </option>
                     <option value="кв. Победа">кв. Победа </option>
                     <option value="кв. Черно море">кв. Черно море</option>
@@ -124,21 +132,25 @@
                     <option value="ж.к Братя Миладинови">ж.к Зорница</option>
                 </select>
             </div>
-
+            <p id="locationMessage">*Това поле е задължително</p>
             <div class="form-register">
-                <label for="address">Въведете адрес:</label>
-                <input type="text" name="address" id="address">
+                <label for="address">*Въведете адрес:</label>
+                <input onblur="onFocusOut('address')" class="form-control" type="text" name="address" id="address">
+            </div>
+            <p id="addressMessage">*Това поле е задължително</p>
+            <div class="form-register">
+                <label for="date">*Въведете дата:</label>
+                <input onblur="onFocusOut('date')" class="form-control" id="date" type="date" name="date">
             </div>
 
-            <div class="form-register">
-                <label for="date">Въведете дата:</label>
-                <input id="date" type="date" name="date">
-            </div>
+            <p id="dateMessage">*Това поле е задължително</p>
 
-            <button class="button" type="button" onclick="onSubmit()">Регистрирай</button>
+            <input type="button" class="button" value="Регистрирай" onclick="onSubmit()">
+
         </form>
     </div>
-    <script src="js/registration.js"></script>
+    <script src="js/registration.js "></script>
+    <!-- <script src="js/validation.js "></script> -->
 </body>
 
 </html>

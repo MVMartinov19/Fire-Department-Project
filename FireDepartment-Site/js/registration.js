@@ -46,16 +46,16 @@ function showTableData() {
         }
         if (alertEmptyAccidents) {
             alertEmptyAccidents.style.display = 'none';
-            alertClearAccidents.style.display = 'block';
 
         }
 
     } else {
         accidentsDataArray = [];
+        table.style.display = 'none';
+        alertClearAccidents.style.display = 'none';
         if (alertEmptyAccidents) {
             alertEmptyAccidents.style.display = 'block';
-            alertClearAccidents.style.display = 'none';
-            table.style.display = 'none';
+
         }
 
     }
