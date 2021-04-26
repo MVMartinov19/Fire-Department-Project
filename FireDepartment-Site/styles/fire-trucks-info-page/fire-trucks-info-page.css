@@ -1,8 +1,12 @@
+/*Import font from google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
 body {
     font-family: 'Jura', sans-serif;
     background-color: gray;
 }
+
+/*Fire trucks info styling*/
 
 .fire-trucks-info {
     background-image: url("https://i.imgur.com/9OjSNJf.png");
@@ -11,6 +15,8 @@ body {
     box-sizing: border-box;
 }
 
+/*Fire trucks first label info styling*/
+
 .info-label-first {
     max-width: 1170px;
     margin-left: auto;
@@ -18,6 +24,8 @@ body {
     padding: 35px 20px;
     text-align: center;
 }
+
+/*Fire trucks first label info h1 styling*/
 
 .info-label-first h1 {
     display: inline-block;
@@ -29,12 +37,16 @@ body {
     font-style: italic;
 }
 
+/*Fire trucks info styling*/
+
 .info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Fire trucks info card styling*/
 
 .info-card {
     width: 500px;
