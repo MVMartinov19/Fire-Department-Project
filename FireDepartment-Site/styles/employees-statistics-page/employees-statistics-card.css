@@ -1,3 +1,5 @@
+    /*Employees statistics card styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card {
         max-width: 600px;
         height: 575px;
@@ -10,6 +12,8 @@
         backdrop-filter: blur(5px);
     }
     
+    /*Employees statistics card styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .img-box {
         position: relative;
         width: 350px;
@@ -19,12 +23,16 @@
         z-index: 1;
     }
     
+    /*Employees statistics image styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .img-box img {
         max-width: 100%;
         border-radius: 35px;
         margin-left: 40px;
     }
     
+    /*Employees statistics card content styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .content {
         position: relative;
         margin-top: 5px;
@@ -33,16 +41,22 @@
         color: #111;
     }
     
+    /*Employees statistics card content h2 styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .content h2 {
         font-weight: 600;
         font-size: 28px;
         border-bottom: 2px solid #2d3e50;
     }
     
+    /*Employees statistics first card content styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .content .first {
         margin-top: 20px;
     }
     
+    /*Employees statistics card content info styling*/
+
     .employees-statistics-section .employees-statistics .employees-statistics-card .card .content .info {
         font-weight: 600;
         font-size: 18px;
