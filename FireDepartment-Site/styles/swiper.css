@@ -4,10 +4,8 @@
     border-bottom: 3px solid #191c22;
 }
 
-.swiper-wrapper {
-    transition-duration: 0ms;
-    transform: translate3d(0px, -550px, 0px);
-}
+
+/* Slide 1 styling in all pages */
 
 .slide1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.discordapp.net/attachments/722478446311112775/835401428964343838/1619245619169.jpg?width=1440&height=469");
@@ -16,11 +14,17 @@
     height: 550px;
 }
 
+
+/* When the user's screen is under 950 px the slide1 image from swiper changes */
+
 @media screen and (max-width:950px) {
     .slide1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/fsUqyVV.jpg");
     }
 }
+
+
+/* Slide 2 styling in Home Page*/
 
 .slide2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/O9zrIvM.jpg");
@@ -29,12 +33,18 @@
     height: 550px;
 }
 
+
+/* Slide 3 styling in Home Page*/
+
 .slide3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/Pv2g4Cm.jpg");
     background-position: center;
     background-size: cover;
     height: 550px;
 }
+
+
+/* Slide 2 styling in Employees  Pages*/
 
 .slide2-employee {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/9042HtE.jpg");
@@ -43,6 +53,9 @@
     height: 550px;
 }
 
+
+/* Slide 3 styling in Employees Pages*/
+
 .slide3-employee {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/dWsw76w.jpg");
     background-position: center;
@@ -50,11 +63,8 @@
     height: 550px;
 }
 
-.swiper-scrollbar-drag {
-    transform: translate3d(0px, 107.8px, 0px);
-    transition-duration: 0ms;
-    height: 107.8px;
-}
+
+/* Slide 2 styling in Extinguishers info Page*/
 
 .slide2-extinguisher {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/vqUE9j8.jpg");
@@ -63,12 +73,18 @@
     height: 550px;
 }
 
+
+/* Slide 3 styling in Extinguishers info Page*/
+
 .slide3-extinguisher {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/jJ7EoiO.jpg");
     background-position: center;
     background-size: cover;
     height: 550px;
 }
+
+
+/* Slide 2 styling in Trucks info Page*/
 
 .slide2-fire-trucks {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/cZk7XoV.jpg");
@@ -77,6 +93,9 @@
     height: 550px;
 }
 
+
+/* Slide 3 styling in Trucks info  Page*/
+
 .slide3-fire-trucks {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" https://i.imgur.com/KRxp2SI.jpg");
     background-position: center;
@@ -84,11 +103,17 @@
     height: 550px;
 }
 
+
+/* Slide 2 styling in Accidents Pages*/
+
 .slide2-accidents {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/9gnHc9T.jpg");
     background-size: cover;
     height: 550px;
 }
+
+
+/* Slide 3 styling in Accidents Page*/
 
 .slide3-accidents {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/18qPmYx.jpg");
