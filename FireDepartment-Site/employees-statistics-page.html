@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Статистики за служители - РСПБЗН</title>
 
+    <!-- Tab icon -->
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
+    <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/swiper.css">
@@ -17,69 +19,78 @@
     <link rel="stylesheet" type="text/css" href="styles/table.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
-
+    <!-- CSS external links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- JS external link -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- JS files -->
     <script src=" js/swiper.js" defer></script>
     <script src="js/navbar.js" defer></script>
 
 </head>
 
 <body>
+    <!-- Header section -->
     <header class="main-header">
-
+        <!-- Main navbar container-->
         <nav class="main-nav">
-
-
+            <!-- Links from main navbar -->
             <a href="index.html">
                 <h1 class="web-site-name">РСПБЗН - Бургас</h1>
             </a>
             <a href="index.html"><i class="fa fa-home active"></i>Начало</a>
-
+            <!-- Dropdown button container-->
             <div class="dropdown">
-                <button class="dropdown-button active"><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown button -->
+                <button class="dropdown-button active "><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="accidents-statistics-page.html">Произшествия</a></li>
                         <li> <a href="employees-statistics-page.html">Служители</a></li>
                     </ul>
-
-
                 </div>
             </div>
+            <!-- Link from main navbar -->
             <a href="employees-page.html"><i class="fa fa-user"></i>Служители</a>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button"><i class="fa fa-info-circle"></i>Информация </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="fire-trucks-info-page.html">За пожарните коли</a></li>
                         <li> <a href="fire-extinguisher-info-page.html">За пожарогасителите</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
                         <li> <a href="registered-accidents-page.html">Регистрирани</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
         </nav>
 
-        <a href="javascript:void(0))"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
-        <a href="javascript:void(0);" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar buttons to open the navbar -->
+        <a href="javascript:void(0)"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
+        <a href="javascript:void(0)" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar container -->
         <nav class="mobile-nav" id="mobileNav">
+            <!-- Mobile navbar links -->
             <ul class="mobile-nav-list">
                 <li><a href="index.html">Начало</a> </li>
                 <li><a href="accidents-statistics-page.html">Статистики - произшествия</a></li>
@@ -90,12 +101,9 @@
                 <li><a href="registration-for-accidents-page.html">Регистрация на произшествие</a></li>
                 <li><a href="registered-accidents-page.html">Регистрирани произшествия</a></li>
             </ul>
-
         </nav>
 
-
     </header>
-
 
     <!--Slider main container -->
     <div class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
@@ -104,121 +112,147 @@
             <div class="swiper-slide slide3 swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
             <!-- Slides -->
             <div class="swiper-slide slide1 swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
-            <div class="swiper-slide slide2-employee slide2-employee swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
-            <div class="swiper-slide slide3-employee slide3-employee swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
+            <div class="swiper-slide slide2-accidents slide2-employee swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
+            <div class="swiper-slide slide3-accidents slide3-employee swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
             <div class="swiper-slide slide1 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5"></div>
         </div>
-        <!-- If we need pagination -->
+        <!-- Pagination -->
         <div class="swiper-pagination swiper-pagination-white swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
 
-        <!-- If we need navigation buttons -->
+        <!-- Navigation buttons -->
         <div class="swiper-button-prev swiper-button-white" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8aaa6e4109c87696c"></div>
         <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8aaa6e4109c87696c"></div>
 
-        <!-- If we need scrollbar -->
+        <!-- Scrollbar -->
         <div class="swiper-scrollbar">
             <div class="swiper-scrollbar-drag"></div>
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
 
+
+    <!-- First container of employees statistics -->
     <div class="employees-statistics-first">
+        <!-- Section for main heading -->
         <section class="employees-statistics-label-first">
             <h1>Служители с най-голямо участие в произшествията през изминалата 2020 година</h1>
         </section>
-        <section class="employees-statistics-section ">
 
+        <!-- Section for employees statistics -->
+        <section class="employees-statistics-section ">
+            <!-- Employees statistics container -->
             <div class="employees-statistics">
+
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/6TIQ9Kt.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Ивайло Николаев</h2>
                             <p class="info first">Екип: Зелен екип <i class="fa fa-dot-circle-o" style="color:green;"></i></p> <br>
                             <p class="info">Служба: Първа РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Пожарникар ІV степен</p> <br>
                             <p class="info">Брой произшествия, в които е участвал: 40</p> <br>
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/XVE4IBe.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Лилия Димитрова</h2>
                             <p class="info first">Екип: Син екип <i class="fa fa-dot-circle-o" style="color:blue;"></i></p> <br>
                             <p class="info">Служба: Първа РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Пожарникар V степен</p> <br>
                             <p class="info">Брой произшествия, в които е участвала: 25</p> <br>
-
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/j9bKIQM.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Никол Стефанова</h2>
                             <p class="info first">Екип: Червен екип <i class="fa fa-dot-circle-o" style="color:red;"></i></p> <br>
                             <p class="info">Служба: Първа РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Пожарникар V степен</p> <br>
                             <p class="info">Брой произшествия, в които е участвала: 23</p> <br>
-
                         </div>
                     </div>
-
                 </div>
+
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/6TIQ9Kt.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Атанас Иванов</h2>
                             <p class="info first">Екип: Зелен екип <i class="fa fa-dot-circle-o" style="color:green;"></i></p> <br>
                             <p class="info">Служба: Втора РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Младши пожарникар</p> <br>
                             <p class="info">Брой произшествия, в които е участвал: 33</p> <br>
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/XVE4IBe.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Румяна Богданова </h2>
                             <p class="info first">Екип: Син екип <i class="fa fa-dot-circle-o" style="color:blue;"></i></p> <br>
                             <p class="info">Служба: Втора РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Пожарникар IV степен</p> <br>
                             <p class="info">Брой произшествия, в които е участвалa: 28</p> <br>
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!-- Employees card container -->
                 <div class="employees-statistics-card">
+                    <!-- Employees card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/j9bKIQM.png">
                         </div>
+                        <!-- Content in card container -->
                         <div class="content">
                             <h2>Калоян Йорданов</h2>
 
@@ -226,26 +260,26 @@
                             <p class="info">Служба: Втора РСПБЗН Бургас</p> <br>
                             <p class="info">Длъжностно наименование: Пожарникар IV степен</p> <br>
                             <p class="info">Брой произшествия, в които е участвалa: 30</p> <br>
-
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div>
-
         </section>
     </div>
 
+
+    <!-- Employees statistics table container -->
     <div class="statistics-table">
+        <!-- Table section -->
         <section class="table-section">
+            <!-- Main heading for employees statistics table -->
             <section class="statistics-label">
                 <h1>Информация за участието на служителите</h1>
             </section>
 
+            <!-- Table section container -->
             <div class="table-section">
+                <!-- Employees table -->
                 <table class="statistics-table">
 
                     <tr>
@@ -265,6 +299,7 @@
                         <td>Червен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>2</td>
                         <td>Емил</td>
@@ -273,6 +308,7 @@
                         <td>Червен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>3</td>
                         <td>Филка</td>
@@ -281,6 +317,7 @@
                         <td>Червен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>4</td>
                         <td>Калоян</td>
@@ -289,6 +326,7 @@
                         <td>Червен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>5</td>
                         <td>Теодор</td>
@@ -297,6 +335,7 @@
                         <td>Червен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>6</td>
                         <td>Гергана</td>
@@ -305,6 +344,7 @@
                         <td>Червен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>7</td>
                         <td>Александър</td>
@@ -314,8 +354,6 @@
                         <td>Втора РСПБЗН</td>
                     </tr>
 
-
-
                     <tr>
                         <td>8</td>
                         <td>Полина</td>
@@ -324,6 +362,7 @@
                         <td>Син</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>9</td>
                         <td>Божидар</td>
@@ -332,6 +371,7 @@
                         <td>Син</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>10</td>
                         <td>Лилия</td>
@@ -340,6 +380,7 @@
                         <td>Син</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>11</td>
                         <td>Християн</td>
@@ -348,6 +389,7 @@
                         <td>Син</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>12</td>
                         <td>Румяна </td>
@@ -356,6 +398,7 @@
                         <td>Син</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>13</td>
                         <td>Мария</td>
@@ -364,6 +407,7 @@
                         <td>Син</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>14</td>
                         <td>Марин</td>
@@ -373,9 +417,6 @@
                         <td>Втора РСПБЗН</td>
                     </tr>
 
-
-
-
                     <tr>
                         <td>15</td>
                         <td>Никола </td>
@@ -384,6 +425,7 @@
                         <td>Зелен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>16</td>
                         <td>Ивайло</td>
@@ -392,6 +434,7 @@
                         <td>Зелен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>17</td>
                         <td>Петя</td>
@@ -400,6 +443,7 @@
                         <td>Зелен</td>
                         <td>Първа РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>18</td>
                         <td>Христо</td>
@@ -408,6 +452,7 @@
                         <td>Зелен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>19</td>
                         <td>Петър </td>
@@ -416,6 +461,7 @@
                         <td>Зелен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>20</td>
                         <td>Атанас</td>
@@ -424,6 +470,7 @@
                         <td>Зелен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
+
                     <tr>
                         <td>21</td>
                         <td>Златина</td>
@@ -432,9 +479,6 @@
                         <td>Зелен</td>
                         <td>Втора РСПБЗН</td>
                     </tr>
-
-
-
                 </table>
             </div>
         </section>
@@ -443,16 +487,19 @@
 
 
 
+    <!-- Google maps address section -->
     <section class="address-section">
-
+        <!--Google map -->
         <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.73046864689275!2d27.466400184502124!3d42.49487437204942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1617973600438!5m2!1sbg!2sbg"
             allowfullscreen="" loading="lazy"></iframe>
-
     </section>
 
 
+    <!-- Footer section -->
     <footer class="main-footer">
+        <!-- Footer content container -->
         <div class="main-footer-content">
+            <!-- Footer contact info -->
             <div class="main-footer-contacts">
                 <h1>Контакти:</h1>
                 <ul>
@@ -461,14 +508,15 @@
                     <li><i class="fa fa-building-o"></i>Втора РСПБЗН-Бургас</li>
                     <li><i class="fa fa-phone"></i>тел: 056/856285</li>
                     <li><i class="fa fa-ambulance"></i>тел. за Спешно повеикване: 160</li>
-
                 </ul>
             </div>
 
+            <!-- Footer fire transparent image -->
             <div class="main-footer-img">
                 <img src="https://i.imgur.com/qFqGcPA.png" alt="fire-transparent">
             </div>
 
+            <!-- Footer institutions info -->
             <div class="main-footer-institutions">
                 <h1>Други близки институции:</h1>
                 <ul>
@@ -481,18 +529,13 @@
             </div>
         </div>
 
+        <!-- Footer content with copyright container -->
         <div class="main-footer-copyright">
             <p>&copy;All rights reserved! <i class="fa fa-users"></i>Team Venom&trade;. </p>
         </div>
 
     </footer>
 
-
-
-
-</body>
-
-</html>
 </body>
 
 </html>
