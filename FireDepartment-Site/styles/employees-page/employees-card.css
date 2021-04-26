@@ -1,3 +1,5 @@
+    /*Employees section card styling*/
+    
     .employees-section .employees .employee-card .card {
         max-width: 500px;
         height: 215px;
@@ -10,11 +12,15 @@
         transition: 0.1s ease-in-out;
     }
     
+    /*Employees section card - hover styling*/
+
     .employees-section .employees .employee-card .card:hover {
         cursor: pointer;
         height: 450px;
     }
     
+    /*Employees section image box styling*/
+
     .employees-section .employees .employee-card .card .img-box {
         position: relative;
         width: 260px;
@@ -24,11 +30,15 @@
         z-index: 1;
     }
     
+    /*Employees section image styling*/
+
     .employees-section .employees .employee-card .card .img-box img {
         max-width: 100%;
         border-radius: 4px;
     }
     
+    /*Employees section content styling*/
+
     .employees-section .employees .employee-card .card .content {
         position: relative;
         margin-top: -140px;
@@ -39,11 +49,15 @@
         transition: 0.3 ease-in-out;
     }
     
+    /*Employees section card - hover content styling*/
+
     .employees-section .employees .employee-card .card:hover .content {
         visibility: visible;
         margin-top: -40px;
         transition-delay: 0.3s;
     }
+
+    /*Employees section card content h2 styling*/
     
     .first-employees .employees-section .employees .employee-card .card .content h2 {
         font-weight: 600;
@@ -51,6 +65,8 @@
         border-bottom: 2px solid #292d30;
     }
     
+    /*Employees section card content h2 styling*/
+
     .second-employees .employees-section .employees .employee-card .card .content h2 {
         font-weight: 600;
         font-size: 25px;
@@ -58,16 +74,22 @@
         color: rgb(155, 154, 154);
     }
     
+    /*Employees section first card content styling*/
+
     .employees-section .employees .employee-card .card .content .first {
         margin-top: 20px;
     }
     
+    /*Employees section employee info styling*/
+
     .first-employees .employees-section .employees .employee-card .card .content .employee-info {
         font-weight: 600;
         font-size: 18px;
         text-align: left;
     }
     
+    /*Employees section employee info styling*/
+
     .second-employees .employees-section .employees .employee-card .card .content .employee-info {
         font-weight: 600;
         font-size: 18px;
