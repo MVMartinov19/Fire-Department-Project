@@ -37,3 +37,12 @@
   
   
 </table>
+
+<hr>
+
+<h1 align = "center">💡Project idea💡</h1>
+<img src="https://i.imgur.com/qFqGcPA.png" align="right" width="100">
+<img src="https://i.imgur.com/qFqGcPA.png" align="left" width="100">
+<p align="center">1. The main idea of our project is to make site that can help the firemans in the Burgas and its region. The goal is to give information about employees, accidents, fire trucks, fire extinguishers and also to make registration of an accident. </p>
+
+<p align="center"> <i> To make this site we have to use HTML&CSS&JavaScript. </i> </p>
