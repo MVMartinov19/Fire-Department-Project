@@ -2,6 +2,13 @@
 <h3 align = "center">Fire Department Project - 2021</h3>
 <p align = "center">Mentored by TechnoLogica</p>
 <br>
+ <p align = "center">
+   <img src = "https://img.shields.io/github/languages/count/MVMartinov19/Fire-Department-Project?style=for-the-badge">
+   <img src = "https://img.shields.io/github/contributors/MVMartinov19/Fire-Department-Project?style=for-the-badge">
+   <img src = "https://img.shields.io/github/repo-size/MVMartinov19/Fire-Department-Project?style=for-the-badge">
+   <img src = "https://img.shields.io/github/last-commit/MVMartinov19/Fire-Department-Project?style=for-the-badge">
+   <img src = "https://img.shields.io/github/languages/top/MVMartinov19/Fire-Department-Project?style=for-the-badge">
+  </p>
 <hr>
 <p align="center"><img src = "https://media.discordapp.net/attachments/812982861703413820/825315728357457950/venom-logo.png" width="250"></p>
 <h3 align = "center">Our team</h3>
