@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информация за пожарните коли</title>
 
+    <!-- Tab icon -->
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
+    <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/swiper.css">
@@ -17,10 +19,14 @@
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
 
+    <!-- CSS external files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- JS external link -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Js files -->
     <script src="js/swiper.js" defer></script>
     <script src="js/navbar.js" defer></script>
 
@@ -28,58 +34,64 @@
 
 <body>
 
+    <!-- Header section -->
     <header class="main-header">
-
+        <!-- Main navbar container-->
         <nav class="main-nav">
-
-
+            <!-- Links from main navbar -->
             <a href="index.html">
                 <h1 class="web-site-name">РСПБЗН - Бургас</h1>
             </a>
             <a href="index.html"><i class="fa fa-home active"></i>Начало</a>
-
+            <!-- Dropdown button container-->
             <div class="dropdown">
-                <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown button -->
+                <button class="dropdown-button "><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="accidents-statistics-page.html">Произшествия</a></li>
                         <li> <a href="employees-statistics-page.html">Служители</a></li>
                     </ul>
-
-
                 </div>
             </div>
+            <!-- Link from main navbar -->
             <a href="employees-page.html"><i class="fa fa-user"></i>Служители</a>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button active"><i class="fa fa-info-circle"></i>Информация </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="fire-trucks-info-page.html">За пожарните коли</a></li>
                         <li> <a href="fire-extinguisher-info-page.html">За пожарогасителите</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
                         <li> <a href="registered-accidents-page.html">Регистрирани</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
         </nav>
 
-        <a href="javascript:void(0))"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
-        <a href="javascript:void(0);" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar buttons to open the navbar -->
+        <a href="javascript:void(0)"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
+        <a href="javascript:void(0)" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar container -->
         <nav class="mobile-nav" id="mobileNav">
+            <!-- Mobile navbar links -->
             <ul class="mobile-nav-list">
                 <li><a href="index.html">Начало</a> </li>
                 <li><a href="accidents-statistics-page.html">Статистики - произшествия</a></li>
@@ -90,86 +102,98 @@
                 <li><a href="registration-for-accidents-page.html">Регистрация на произшествие</a></li>
                 <li><a href="registered-accidents-page.html">Регистрирани произшествия</a></li>
             </ul>
-
         </nav>
-
 
     </header>
 
-
-    <!-- Slider main container -->
+    <!--Slider main container -->
     <div class="swiper-container swiper-container-initialized swiper-container-vertical swiper-container-pointer-events">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper" id="swiper-wrapper-8aaa6e4109c87696c" aria-live="polite">
             <div class="swiper-slide slide3 swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
             <!-- Slides -->
             <div class="swiper-slide slide1 swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
-            <div class="swiper-slide slide2-fire-trucks swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
-            <div class="swiper-slide slide3-fire-trucks swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
+            <div class="swiper-slide slide2-accidents slide2-employee swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
+            <div class="swiper-slide slide3-accidents slide3-employee swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
             <div class="swiper-slide slide1 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5"></div>
         </div>
-        <!-- If we need pagination -->
+        <!-- Pagination -->
         <div class="swiper-pagination swiper-pagination-white swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
 
-        <!-- If we need navigation buttons -->
+        <!-- Navigation buttons -->
         <div class="swiper-button-prev swiper-button-white" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-8aaa6e4109c87696c"></div>
         <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-8aaa6e4109c87696c"></div>
 
-        <!-- If we need scrollbar -->
+        <!-- Scrollbar -->
         <div class="swiper-scrollbar">
             <div class="swiper-scrollbar-drag"></div>
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
     </div>
 
+
+    <!-- Fire trucks info container -->
     <div class="fire-trucks-info">
 
+        <!-- Section for main heading -->
         <section class="info-label-first">
             <h1>Информация за пожарните коли</h1>
         </section>
-        <section class="info-section ">
 
+        <!-- Info section for fire trucks -->
+        <section class="info-section ">
+            <!-- Info container for fire trucks -->
             <div class="info">
 
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/x3EXyUf.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Противопожарни автомобили - тежък клас</h2>
                             <p class="info first">Помпа: Ruberg</p> <br>
                             <p class="info">Резервоар за вода: > 6 000 l </p> <br>
                             <p class="info">Резервоар за пенообразувател: > 600 l</p> <br>
                             <p class="info">Стандартизация: EN 1846</p> <br>
-
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/P5kMCJx.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Противопожарни автомобили - среден клас</h2>
                             <p class="info first">Помпа: За нормално и високо налягане</p> <br>
                             <p class="info">Резервоар за вода: 2500 - 4 000 литра</p> <br>
                             <p class="info">Резервоар за пенообразувател: 250 - 400 l</p> <br>
                             <p class="info">Стандартизация: EN 1846</p> <br>
-
                         </div>
                     </div>
-
                 </div>
+
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/tGR00d5.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Противопожарни автомобили - лек клас</h2>
                             <p class="info first">Помпа: За нормално, високо налягане или моторна помпа </p> <br>
@@ -181,11 +205,17 @@
                     </div>
 
                 </div>
+
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/eNdr0el.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Високопроходим автомобил със система за пожарогасене</h2>
                             <p class="info first">Мобилна система за пожарогасене с високо налягане: Fireco EP040L50B</p> <br>
@@ -198,116 +228,122 @@
                 </div>
 
 
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/8f8z1x8.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Мобилна система за гасене на горски пожари </h2>
                             <p class="info first">Помпа: бензинова, Davey Firefighter® Pro</p> <br>
                             <p class="info">Резервоар за вода: 350 l</p> <br>
                             <p class="info">Резервоар за пенообразувател: 30 l</p> <br>
                             <p class="info">Стандартизация: EN 1846</p> <br>
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/Er58L8M.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Индустриални противопожарни автомобили</h2>
                             <p class="info first">Помпа: За нормално налягане</p> <br>
                             <p class="info">Резервоар за вода: 2500 - 6 000 литра</p> <br>
                             <p class="info">Резервоар за пенообразувател: 250 - 400 литра</p> <br>
                             <p class="info">Стандартизация: EN 1846</p> <br>
-
-
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/7vscd6F.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Влекач - тежковоз</h2>
                             <p class="info first">Полезен товар: 25 000 кг; 46 000 кг. и др.</p> <br>
                             <p class="info">Пълна маса: 50 100 кг.</p> <br>
                             <p class="info">Мощност: 353 kW</p> <br>
                             <p class="info">Обща дължина: до 16 м </p> <br>
-
-
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/xXr2DEE.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Летищни аварийно – спасителни противопожарни автомобили</h2>
                             <p class="info first">Пожарна помпа: Ziegler 8 000 l/min</p> <br>
                             <p class="info">Резервоар за вода: 12 000 l</p> <br>
                             <p class="info">Резервоар за пенообразувател: 1 450 l</p> <br>
                             <p class="info">Стандартизация: EN 1846, NFPA, ICAO </p> <br>
-
-
-
                         </div>
                     </div>
-
                 </div>
 
+
+                <!--Info card container-->
                 <div class="info-card">
+                    <!-- Info card -->
                     <div class="card">
+                        <!-- Image in card container -->
                         <div class="img-box">
                             <img src="https://i.imgur.com/EAyBPR2.jpg">
                         </div>
+                        <!--Content in card container -->
                         <div class="content">
                             <h2>Високопроходим всъдеход - Амфибия</h2>
                             <p class="info first">Двигател: Cummins 185 hp</p> <br>
                             <p class="info">Максимално общо тегло: 6 650 kg</p> <br>
                             <p class="info">Скорост на придвижване във вода: 5 km/h</p> <br>
                             <p class="info">Скорост по суша: 45 km/h </p> <br>
-
-
-
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </section>
     </div>
 
 
-
+    <!-- Google maps address section -->
     <section class="address-section">
-
+        <!--Google map -->
         <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.73046864689275!2d27.466400184502124!3d42.49487437204942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a694b930803ba5%3A0x12fc5cfd72098d8!2z0KDQoSDQn9CR0JfQnSDQkdCj0KDQk9CQ0KE!5e0!3m2!1sbg!2sbg!4v1617973600438!5m2!1sbg!2sbg"
             allowfullscreen="" loading="lazy"></iframe>
-
     </section>
 
+
+    <!-- Footer section -->
     <footer class="main-footer">
+        <!-- Footer content container -->
         <div class="main-footer-content">
+            <!-- Footer contact info -->
             <div class="main-footer-contacts">
                 <h1>Контакти:</h1>
                 <ul>
@@ -319,10 +355,12 @@
                 </ul>
             </div>
 
+            <!-- Footer fire transparent image -->
             <div class="main-footer-img">
                 <img src="https://i.imgur.com/qFqGcPA.png" alt="fire-transparent">
             </div>
 
+            <!-- Footer institutions info -->
             <div class="main-footer-institutions">
                 <h1>Други близки институции:</h1>
                 <ul>
@@ -335,6 +373,7 @@
             </div>
         </div>
 
+        <!-- Footer content with copyright container -->
         <div class="main-footer-copyright">
             <p>&copy;All rights reserved! <i class="fa fa-users"></i>Team Venom&trade;. </p>
         </div>
