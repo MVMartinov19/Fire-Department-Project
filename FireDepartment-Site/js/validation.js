@@ -1,23 +1,6 @@
-function onValidate() {
-
-    let formInputs = document.getElementsByClassName('form-control');
-    let message = document.getElementById('fieldsEmpty');
-
-    for (let i = 0; i < formInputs.length; i++) {
-        if (formInputs[i].value === '') {
-            // formInputs[i]; Add class empty-field - като проибавим клас css ще знае че полето е празно
-            message.style.display = 'block';
-
-        }
-    }
-
-
-}
+// Check if something in the form is empty
 
 function onFocusOut(id) {
-    let name = document.getElementById(id);
-    name.style.boxShadow = 'none'
-
     switch (id) {
         case 'office':
             validateOffice(id);
@@ -36,7 +19,7 @@ function onFocusOut(id) {
             break;
 
         case 'address':
-            validateAdress(id);
+            validateAddress(id);
             break;
 
         case 'date':
@@ -48,6 +31,7 @@ function onFocusOut(id) {
     }
 }
 
+// Check if office input is empty 
 function validateOffice(id) {
     let officeValue = document.getElementById(id).value;
 
@@ -60,6 +44,8 @@ function validateOffice(id) {
     }
 }
 
+
+// Check if team input is empty 
 function validateTeam(id) {
     let teamValue = document.getElementById(id).value;
 
@@ -72,6 +58,8 @@ function validateTeam(id) {
     }
 }
 
+
+// Check if truck input is empty 
 function validateTruck(id) {
     let truckValue = document.getElementById(id).value;
 
@@ -84,6 +72,8 @@ function validateTruck(id) {
     }
 }
 
+
+// Check if location input is empty 
 function validateLocation(id) {
     let locationValue = document.getElementById(id).value;
 
@@ -96,7 +86,9 @@ function validateLocation(id) {
     }
 }
 
-function validateAdress(id) {
+
+// Check if address input is empty 
+function validateAddress(id) {
     let addressValue = document.getElementById(id).value;
 
     let message5 = document.getElementById('addressMessage');
@@ -108,6 +100,7 @@ function validateAdress(id) {
     }
 }
 
+// Check if date input is empty 
 function validateDate(id) {
     let dateValue = document.getElementById(id).value;
 
