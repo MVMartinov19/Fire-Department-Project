@@ -1,16 +1,24 @@
+/* Table styling */
+
 .statistics-table {
-    border-collapse: collapse;
     width: 100%;
     border: 1px solid black;
     font-weight: 600;
     font-size: 18px;
     box-shadow: 20px 20px 50px #4e4d4d;
+    /*Horizontal overflow*/
     overflow-x: auto;
 }
+
+
+/* Table heading styling */
 
 th {
     font-size: 22px;
 }
+
+
+/* Tablle heading and table data styling */
 
 th,
 td {
@@ -18,17 +26,29 @@ td {
     padding: 12px;
 }
 
+
+/* On even row the background will be #919191 */
+
 tr:nth-child(even) {
     background-color: #919191
 }
+
+
+/* When user hovers on even row the background will be #5a5858 */
 
 tr:nth-child(even):hover {
     background-color: #5a5858
 }
 
+
+/* On odd row the background will be #b1b1b1 */
+
 tr:nth-child(odd) {
     background-color: #b1b1b1;
 }
+
+
+/* When user hovers on odd row the background will be #808080*/
 
 tr:nth-child(odd):hover {
     background-color: #808080;
