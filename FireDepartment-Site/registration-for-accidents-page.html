@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на произшествие</title>
 
+    <!-- Tab icon -->
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/8gHZSdG.png">
 
+    <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/registration-for-accidents-page/registration-for-accidents.css">
 
+    <!-- External CSS links  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- JS files -->
     <script src="js/registration.js " defer></script>
     <script src="js/validation.js " defer></script>
     <script src="js/navbar.js" defer></script>
@@ -23,58 +27,64 @@
 </head>
 
 <body>
+    <!-- Header section -->
     <header class="main-header">
-
+        <!-- Main navbar container-->
         <nav class="main-nav">
-
-
+            <!-- Links from main navbar -->
             <a href="index.html">
                 <h1 class="web-site-name">РСПБЗН - Бургас</h1>
             </a>
-            <a href="index.html"><i class="fa fa-home "></i>Начало</a>
-
+            <a href="index.html"><i class="fa fa-home active"></i>Начало</a>
+            <!-- Dropdown button container-->
             <div class="dropdown">
-                <button class="dropdown-button "><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown button -->
+                <button class="dropdown-button"><i class="fa fa-book"></i>Статистики </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="accidents-statistics-page.html">Произшествия</a></li>
                         <li> <a href="employees-statistics-page.html">Служители</a></li>
                     </ul>
-
-
                 </div>
             </div>
+            <!-- Link from main navbar -->
             <a href="employees-page.html"><i class="fa fa-user"></i>Служители</a>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button"><i class="fa fa-info-circle"></i>Информация </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="fire-trucks-info-page.html">За пожарните коли</a></li>
                         <li> <a href="fire-extinguisher-info-page.html">За пожарогасителите</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
+            <!-- Dropdown links container -->
             <div class="dropdown">
+                <!-- Dropdown button -->
                 <button class="dropdown-button active"><i class="fa fa-newspaper-o"></i> Произшествия </button>
+                <!-- Dropdown links container -->
                 <div class="dropdown-content">
                     <ul>
+                        <!-- Dropdown links -->
                         <li> <a href="registration-for-accidents-page.html">Регистрация</a></li>
                         <li> <a href="registered-accidents-page.html">Регистрирани</a></li>
                     </ul>
-
-
                 </div>
             </div>
-
         </nav>
 
-        <a href="javascript:void(0))"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
-        <a href="javascript:void(0);" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar buttons to open the navbar -->
+        <a href="javascript:void(0)"><i onclick="navbarExit()" id="exit" class="mobile-btn-exit fa fa-times-circle fa-2x"></i></a>
+        <a href="javascript:void(0)" onclick="navbarResponsive()"><i class="mobile-btn fa fa-align-justify fa-2x"></i></a>
+        <!-- Mobile navbar container -->
         <nav class="mobile-nav" id="mobileNav">
+            <!-- Mobile navbar links -->
             <ul class="mobile-nav-list">
                 <li><a href="index.html">Начало</a> </li>
                 <li><a href="accidents-statistics-page.html">Статистики - произшествия</a></li>
@@ -85,16 +95,19 @@
                 <li><a class="active" href="registration-for-accidents-page.html">Регистрация на произшествие</a></li>
                 <li><a href="registered-accidents-page.html">Регистрирани произшествия</a></li>
             </ul>
-
         </nav>
-
 
     </header>
 
+    <!-- Registration container -->
     <div class="registration">
+
+        <!-- Main heading of the form -->
         <h1>Регистрация на произшествие</h1>
+        <!-- Form for accidents registration -->
         <form id="form" method="post" onsubmit="onValidate()">
 
+            <!-- Office selection -->
             <div class="form-register">
                 <label for="office">*Изберете служба:</label> <br>
                 <select onblur="onFocusOut('office')" class="form-control" name="office" id="office">
@@ -102,11 +115,12 @@
                     <option value="Първа РСПБЗН Бургас">Първа РСПБЗН Бургас</option>
                     <option value="Втора РСПБЗН Бургас">Втора РСПБЗН Бургас</option>
                 </select>
-
-
             </div>
+
+            <!-- If office selection is empty value -->
             <p id="officeMessage">*Това поле е задължително</p>
 
+            <!-- Team Selection -->
             <div class="form-register">
                 <label for="team">*Изберете екип:</label>
                 <select onblur="onFocusOut('team')" class="form-control" name="team" id="team">
@@ -116,8 +130,11 @@
                 <option value="Зелен екип">Зелен екип</option>
                 </select>
             </div>
+
+            <!-- If team selection is empty value -->
             <p id="teamMessage">*Това поле е задължително</p>
 
+            <!-- Truck selection -->
             <div class="form-register">
                 <label for="">*Изберете автомобил:</label>
                 <select onblur="onFocusOut('truck')" class="form-control" name="truck" id="truck">
@@ -133,7 +150,11 @@
                     <option value="Високопроходим всъдеход - Амфибия">Високопроходим всъдеход - Амфибия</option>
                 </select>
             </div>
+
+            <!-- If truck selection is empty value -->
             <p id="truckMessage">*Това поле е задължително</p>
+
+            <!-- Location selection -->
             <div class="form-register">
                 <label for="location">*Изберете място на произшествието:</label>
                 <select onblur="onFocusOut('location')" class="form-control" name="location" id="location">
@@ -156,27 +177,34 @@
                     <option value="ж.к Братя Миладинови">ж.к Зорница</option>
                 </select>
             </div>
+
+            <!-- If location selection is empty value -->
             <p id="locationMessage">*Това поле е задължително</p>
+
+            <!-- Adress input -->
             <div class="form-register">
                 <label for="address">*Въведете адрес:</label>
                 <input onblur="onFocusOut('address')" class="form-control" type="text" name="address" id="address">
             </div>
+
+            <!-- If address input is empty value -->
             <p id="addressMessage">*Това поле е задължително</p>
+
+            <!-- Date selection -->
             <div class="form-register">
                 <label for="date">*Въведете дата:</label>
                 <input onblur="onFocusOut('date')" class="form-control" id="date" type="date" name="date">
             </div>
 
+            <!-- If date selection is empty value -->
             <p id="dateMessage">*Това поле е задължително</p>
 
+            <!-- Registration button -->
             <input type="button" class="button" value="Регистрирай" onclick="onSubmit()">
 
         </form>
     </div>
-    <<<<<<< HEAD=======< script src="js/registration.js ">
-        </script>
-        <script src="js/validation.js "></script>
-        >>>>>>> c894c48a296ad67ab452393ab746929e0b1c2072
+
 </body>
 
 </html>
