@@ -1,3 +1,5 @@
+/*Import font from google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
 body {
     font-family: 'Jura', sans-serif;
@@ -7,6 +9,8 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+/*Registration for accidents styling*/
 
 .registration {
     width: 85%;
@@ -25,12 +29,16 @@ body {
     text-align: center;
 }
 
+/*Registration for accidents h1 styling*/
+
 .registration h1 {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
     color: #ffffff;
 }
+
+/*Form register styling*/
 
 .form-register {
     border: 1px solid gray;
@@ -39,6 +47,8 @@ body {
     border-radius: 8px;
 }
 
+/*Form register label styling*/
+
 .form-register label {
     display: block;
     text-align: left;
@@ -46,6 +56,8 @@ body {
     font-size: 18px;
     color: #ffffff;
 }
+
+/*Form register input styling*/
 
 .form-register input,
 .form-register select {
@@ -58,17 +70,25 @@ body {
     color: #ffffff;
 }
 
+/*Form register option styling*/
+
 .form-register option {
     color: #000000;
 }
+
+/*Form register selected - hover styling*/
 
 .form-register select:hover {
     cursor: pointer;
 }
 
+/*Form register input styling*/
+
 .form-register input {
     color: #ffffff;
 }
+
+/*Input styling*/
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
@@ -78,11 +98,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(0.8);
 }
 
+/*Paragraph styling*/
+
 p {
     display: none;
     color: #ffffff;
     padding: 10px;
 }
+
+/*Button styling*/
 
 .button {
     display: block;
@@ -93,6 +117,8 @@ p {
     border: none;
     width: 100%;
 }
+
+/*Button - hover styling*/
 
 .button:hover {
     cursor: pointer;
