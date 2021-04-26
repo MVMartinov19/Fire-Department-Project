@@ -1,144 +1,170 @@
-    .main-header {
-        max-width: 100%;
-        height: 62px;
-        /* Make align center for text*/
-        line-height: 62px;
-        border-top: 2px solid #808080;
-        border-bottom: 2px solid #808080;
-        /* Put the border inside the header element*/
-        box-sizing: border-box;
-        background-color: #232323;
-        overflow: hidden;
-    }
-    
-    .main-nav a {
-        display: inline;
-        padding-right: 20px;
-        padding-left: 20px;
-        font-size: 18px;
-        color: #ffffff;
-        text-decoration: none;
-        float: left;
-    }
-    
-    .main-nav a:hover {
-        color: #808080;
-        font-weight: bold;
-    }
-    
-    .web-site-name {
-        display: inline;
-    }
-    
-    .active {
-        font-weight: bold;
-    }
-    
-    .fa {
-        margin-right: 3px;
-        color: white;
-    }
-    
-    .dropdown {
-        float: left;
-        overflow: hidden;
-    }
-    
-    .dropdown .dropdown-button {
-        font-size: 18px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-    }
-    
-    .dropdown-button:hover {
-        cursor: pointer;
-        color: #808080;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        border-radius: 15px;
-        background-color: #c9c6c6;
-        min-width: 200px;
-        z-index: 5;
-    }
-    
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 5px 5px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
-    .main-header .mobile-btn,
-    .main-header .mobile-btn-exit {
-        display: none;
-    }
-    
-    @media (max-width: 950px) {
-        .main-header .mobile-btn {
-            display: block;
-            position: absolute;
-            font-size: 40px;
-            right: 20px;
-            top: 13px;
-            transform: translateY(-50);
-        }
-        .main-header .mobile-btn-exit {
-            display: block;
-            position: absolute;
-            font-size: 40px;
-            right: 80px;
-            top: 13px;
-            transform: translateY(-50);
-        }
-        .main-nav {
-            display: none;
-        }
-    }
-    
-    nav.mobile-nav {
-        background-image: url('https://i.imgur.com/xvVOYQl.jpg');
-        background-position: center;
-        display: none;
-        position: fixed;
-        z-index: 99;
-        top: 62px;
-        right: 0;
-        bottom: 0;
-        width: 40%;
-        font-size: 20px;
-        overflow: auto;
-    }
-    
-    nav.mobile-nav ul li a {
-        display: block;
-        text-decoration: none;
-        color: #ffffff;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    nav.mobile-nav ul li a:hover {
-        color: gray;
-    }
-    
-    nav.mobile-nav .mobile-nav-list {
-        padding: 20px;
-    }
+ /* Header styling */
+ 
+ .main-header {
+     max-width: 100%;
+     height: 62px;
+     /* Make align center for text*/
+     line-height: 62px;
+     border-top: 2px solid #808080;
+     border-bottom: 2px solid #808080;
+     /* Put the border inside the header element*/
+     box-sizing: border-box;
+     background-color: #232323;
+     overflow: hidden;
+ }
+ /* Links in navbar styling */
+ 
+ .main-nav a {
+     display: inline;
+     padding-right: 20px;
+     padding-left: 20px;
+     font-size: 18px;
+     color: #ffffff;
+     text-decoration: none;
+     float: left;
+ }
+ /* Hovered links in navbar styling */
+ 
+ .main-nav a:hover {
+     color: #808080;
+     font-weight: bold;
+ }
+ /* Web site name styling */
+ 
+ .web-site-name {
+     display: inline;
+ }
+ /* Active links styling */
+ 
+ .active {
+     font-weight: bold;
+ }
+ /* Font awesome icons styling */
+ 
+ .fa {
+     margin-right: 3px;
+     color: white;
+ }
+ /* Dropdown menu styling*/
+ 
+ .dropdown {
+     float: left;
+     overflow: hidden;
+ }
+ /* Dropdown button styling */
+ 
+ .dropdown .dropdown-button {
+     font-size: 18px;
+     border: none;
+     color: #ffffff;
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+ }
+ /* Hovered dropdown button styling */
+ 
+ .dropdown-button:hover {
+     cursor: pointer;
+     color: #808080;
+ }
+ /* Dropdown content styling */
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     border-radius: 15px;
+     background-color: #c9c6c6;
+     min-width: 200px;
+     /* Make the links in front of the swiper */
+     z-index: 5;
+ }
+ /* Dropdown links styling */
+ 
+ .dropdown-content a {
+     float: none;
+     color: black;
+     padding: 5px 5px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+ }
+ /* Hovered dropdown links styling */
+ 
+ .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+ /*When user hover on dropdown, the dropdown content will display*/
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ /* Mobile buttons for open and close the mobile navbar styling */
+ 
+ .main-header .mobile-btn,
+ .main-header .mobile-btn-exit {
+     display: none;
+ }
+ /* When user's screen is under 950px*/
+ 
+ @media (max-width: 950px) {
+     /* Mopbile button styling */
+     .main-header .mobile-btn {
+         display: block;
+         position: absolute;
+         font-size: 40px;
+         left: 20px;
+         top: 13px;
+         /* Center the button vertically */
+         transform: translateY(-50);
+     }
+     /* Mobile button for exit styling */
+     .main-header .mobile-btn-exit {
+         display: block;
+         position: absolute;
+         font-size: 40px;
+         left: 80px;
+         top: 13px;
+         /* Center the button vertically */
+         transform: translateY(-50);
+     }
+     /* Main navbar styling */
+     .main-nav {
+         display: none;
+     }
+ }
+ /* Mobile navbar styling */
+ 
+ nav.mobile-nav {
+     background-image: url('https://i.imgur.com/xvVOYQl.jpg');
+     background-position: center;
+     display: none;
+     position: fixed;
+     /* Make the navbar in front of the elements of the page  */
+     z-index: 99;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     width: 40%;
+     font-size: 20px;
+     overflow: auto;
+ }
+ /* Mobile navbar links styling */
+ 
+ nav.mobile-nav ul li a {
+     display: block;
+     text-decoration: none;
+     color: #ffffff;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ /* Hovered mobile links styling*/
+ 
+ nav.mobile-nav ul li a:hover {
+     color: gray;
+ }
+ /* Mobile navbar list styling */
+ 
+ nav.mobile-nav .mobile-nav-list {
+     padding: 20px;
+ }
