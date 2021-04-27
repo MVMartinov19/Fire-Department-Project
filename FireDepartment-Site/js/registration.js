@@ -47,6 +47,16 @@ function onSubmit()
     accidentsDataArray.push(accidentData);
     //stringifies the array to set it to a value to the local storage by the key name "accidentsData"
     localStorage.setItem('accidentsData', JSON.stringify(accidentsDataArray));
+
+    //reset registration items' value
+    document.getElementById('office').value = '';
+    document.getElementById('team').value = '';
+    document.getElementById('truck').value = '';
+    document.getElementById('location').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById('date').value  = '';
+
+    alert('Успешна регистрация!');
 }
 
 
