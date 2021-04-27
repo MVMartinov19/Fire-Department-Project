@@ -1,8 +1,12 @@
+/*Import font from google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
 body {
     font-family: 'Jura', sans-serif;
     background: rgba( 59, 72, 124, 0.25);
 }
+
+/*Employees first employees styling*/
 
 .first-employees {
     background-image: url("https://i.imgur.com/9OjSNJf.png");
@@ -11,6 +15,8 @@ body {
     box-sizing: border-box;
 }
 
+/*Employees first label styling*/
+
 .employees-label-first {
     max-width: 1170px;
     margin-left: auto;
@@ -18,6 +24,8 @@ body {
     padding: 40px 20px;
     text-align: center;
 }
+
+/*Employees first label h1 styling*/
 
 .employees-label-first h1 {
     display: inline-block;
@@ -29,12 +37,16 @@ body {
     font-style: italic;
 }
 
+/*Employees second employees styling*/
+
 .second-employees {
     background-image: url("https://i.imgur.com/T8Ben9f.jpg");
     background-position: center;
     border-bottom: 3px solid #000000;
     box-sizing: border-box;
 }
+
+/*Employees second label styling*/
 
 .second-employees .employees-label-second {
     max-width: 1170px;
@@ -43,6 +55,8 @@ body {
     padding: 40px 20px;
     text-align: center;
 }
+
+/*Employees second label h1 styling*/
 
 .second-employees .employees-label-second h1 {
     display: inline-block;
@@ -54,12 +68,16 @@ body {
     font-style: italic;
 }
 
+/*Employees styling*/
+
 .employees {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Employees card styling*/
 
 .employee-card {
     width: 500px;
@@ -69,11 +87,15 @@ body {
     padding: 14px;
 }
 
+/*Employees team section styling*/
+
 .teams-section {
     background-image: linear-gradient(to right, #1d2536e5, #000000e5);
     border-top: 3px solid #000000;
     box-sizing: border-box;
 }
+
+/*Employees team section h1 styling*/
 
 .teams-section h1 {
     margin-bottom: 20px;
@@ -85,12 +107,16 @@ body {
     font-style: italic;
 }
 
+/*Employees teams styling*/
+
 .teams {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Employees teams h2 styling*/
 
 .teams h2 {
     margin-bottom: 20px;
@@ -102,12 +128,16 @@ body {
     color: #ffffff;
 }
 
+/*Employees teams box background styling*/
+
 .teams-box {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/fXF8l32.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*Employees teams box styling*/
 
 .teams-box {
     width: 500px;
@@ -119,6 +149,8 @@ body {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 
+/*Employees teams box h2 styling*/
+
 .teams-box h2 {
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -128,6 +160,8 @@ body {
     text-align: center;
     color: white;
 }
+
+/*Employees teams box paragraph styling*/
 
 .teams-box p {
     margin-bottom: 20px;
@@ -139,6 +173,8 @@ body {
     color: white;
 }
 
+/*Employees teams box logo styling*/
+
 .teams-box-logo {
     width: 500px;
     line-height: 1.5em;
@@ -146,11 +182,15 @@ body {
     padding: 20px 20px;
 }
 
+/*Employees teams logo image styling*/
+
 .teams-box-logo img {
     width: 300px;
     margin-left: 90px;
     margin-top: 40px;
 }
+
+/*Employees second label styling*/
 
 .employees-label-second {
     max-width: 1170px;
@@ -159,6 +199,8 @@ body {
     padding: 30px 20px;
     text-align: center;
 }
+
+/*Employees second label h1 styling*/
 
 .employees-label-second h1 {
     display: inline-block;

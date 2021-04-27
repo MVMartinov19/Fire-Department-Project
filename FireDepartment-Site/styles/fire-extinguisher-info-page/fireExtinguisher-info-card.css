@@ -1,3 +1,5 @@
+/*Fire extinguisher image styling*/
+
 .info-section .info .info-card .card {
     max-width: 600px;
     height: 650px;
@@ -11,6 +13,8 @@
     transition: 0.1s ease-in-out;
 }
 
+/*Fire extinguisher image box styling*/
+
 .info-section .info .info-card .card .img-box {
     position: relative;
     width: 350px;
@@ -20,6 +24,8 @@
     z-index: 1;
 }
 
+/*Fire extinguisher image styling*/
+
 .info-section .info .info-card .card .img-box img {
     width: 100%;
     height: 100%;
@@ -28,12 +34,16 @@
     opacity: 0.7;
 }
 
+/*Fire extinguisher content styling*/
+
 .info-section .info .info-card .card .content {
     position: relative;
     padding: 10px 15px;
     text-align: center;
     color: #111;
 }
+
+/*Fire extinguisher content h2 styling*/
 
 .info-section .info .info-card .card .content h2 {
     font-weight: 600;
@@ -42,9 +52,13 @@
     margin-bottom: 10px;
 }
 
+/*Fire extinguisher first content styling*/
+
 .info-section .info .info-card .card .content .first {
     margin-top: 20px;
 }
+
+/*Fire extinguisher content info styling*/
 
 .info-section .info .info-card .card .content .info {
     font-weight: 600;

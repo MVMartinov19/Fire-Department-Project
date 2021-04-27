@@ -4,12 +4,16 @@ body {
     background-color: gray;
 }
 
+/*Accidents statistics first styling*/
+
 .accidents-statistics-first {
     background-image: url("https://i.imgur.com/nfECrQL.jpg");
     background-position: center;
     border-bottom: 3px solid #000000;
     box-sizing: border-box;
 }
+
+/*Accidents statistics first label styling*/
 
 .accidents-statistics-label-first {
     max-width: 1170px;
@@ -18,6 +22,8 @@ body {
     padding: 35px 20px;
     text-align: center;
 }
+
+/*Accidents statistics first label h1 styling*/
 
 .accidents-statistics-label-first h1 {
     display: inline-block;
@@ -29,12 +35,16 @@ body {
     font-style: italic;
 }
 
+/*Accidents statistics styling*/
+
 .accidents-statistics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Accidents statistics card styling*/
 
 .accidents-statistics-card {
     width: 500px;
@@ -43,6 +53,8 @@ body {
     margin-bottom: 20px;
     padding: 14px;
 }
+
+/*Accidents statistics table styling*/
 
 .accidents-table {
     border-bottom: 3px solid #000000;
@@ -55,6 +67,8 @@ body {
     background-image: linear-gradient(to right, #555555, #606060);
 }
 
+/*Accidents statistics label styling*/
+
 .statistics-label {
     max-width: 1170px;
     margin-left: auto;
@@ -62,6 +76,8 @@ body {
     padding: 20px 20px;
     text-align: center;
 }
+
+/*Accidents statistics label h1 styling*/
 
 .statistics-label h1 {
     display: inline-block;

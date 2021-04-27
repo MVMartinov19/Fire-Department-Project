@@ -1,9 +1,13 @@
+    /*Import font from google*/
+
     @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
     body {
         font-family: 'Jura', sans-serif;
         background-color: gray;
     }
     
+    /*Registered accidents styling*/
+
     .registered-accidents {
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.imgur.com/9OjSNJf.png");
         background-position: center;
@@ -12,6 +16,8 @@
         padding: 100px 20px;
     }
     
+    /*Registered accidents label styling*/
+
     .registered-accidents-label {
         max-width: 1170px;
         margin-left: auto;
@@ -20,6 +26,8 @@
         text-align: center;
     }
     
+    /*Registered accidents label h1 styling*/
+
     .registered-accidents-label h1 {
         display: inline-block;
         margin-bottom: 20px;
@@ -30,6 +38,8 @@
         font-style: italic;
     }
     
+    /*Registered accidents label paragraph styling*/
+
     .registered-accidents p {
         display: inline-block;
         margin-top: 20px;
@@ -39,6 +49,8 @@
         font-style: italic;
     }
     
+    /*Registered accidents clear button styling*/
+
     .clear-button {
         width: 100%;
         background-color: #464343;
@@ -49,11 +61,15 @@
         margin-top: 15px;
     }
     
+    /*Registered accidents clear button - hover styling*/
+
     .clear-button:hover {
         cursor: pointer;
         background-color: #2c2929;
     }
     
+    /*Registered accidents about us section styling*/
+
     .about-us-section {
         background-image: linear-gradient(to right, #2b2929, #2c2b2be5);
         border-top: 3px solid #000000;
@@ -61,6 +77,8 @@
         padding-bottom: 45px;
     }
     
+    /*Registered accidents about us section h1 styling*/
+
     .about-us-section h1 {
         margin-bottom: 20px;
         padding: 50px 20px;
@@ -71,6 +89,8 @@
         font-style: italic;
     }
     
+    /*Registered accidents about us styling*/
+
     .about-us {
         display: flex;
         flex-direction: row;
@@ -78,6 +98,8 @@
         justify-content: space-around;
     }
     
+    /*Registered accidents about us h2 styling*/
+
     .about-us h2 {
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -88,6 +110,8 @@
         color: #ffffff;
     }
     
+    /*Registered accidents about us box background styling*/
+
     .about-us-box {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/fXF8l32.jpg");
         background-size: cover;
@@ -95,6 +119,8 @@
         background-repeat: no-repeat;
     }
     
+    /*Registered accidents about us box styling*/
+
     .about-us-box {
         width: 500px;
         line-height: 1.5em;
@@ -105,6 +131,8 @@
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     }
     
+    /*Registered accidents about us box h2 styling*/
+
     .about-us-box h2 {
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -115,6 +143,8 @@
         color: white;
     }
     
+    /*Registered accidents about us box paragraph styling*/
+
     .about-us-box p {
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -125,6 +155,8 @@
         color: white;
     }
     
+    /*Registered accidents about us box logo styling*/
+
     .about-us-box-logo {
         width: 500px;
         line-height: 1.5em;
@@ -132,6 +164,8 @@
         padding: 20px 20px;
     }
     
+    /*Registered accidents about us box image styling*/
+
     .about-us-box-logo img {
         width: 300px;
         margin-left: 90px;
