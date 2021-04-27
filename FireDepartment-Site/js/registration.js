@@ -58,11 +58,11 @@ function showTableData()
     if (JSON.parse(localStorage.getItem('accidentsData')) && table)
     {
         JSON.parse(localStorage.getItem('accidentsData')).forEach((item) => { table.innerHTML += `<tr><td>${item.office}</td>
-                                                                                                     <td>${item.team}</td>
-                                                                                                     <td>${item.truck}</td>
-                                                                                                     <td>${item.location}</td>
-                                                                                                     <td>${item.address}</td>
-                                                                                                     <td>${item.date}</td></tr>`; });
+                                                                                                      <td>${item.team}</td>
+                                                                                                      <td>${item.truck}</td>
+                                                                                                      <td>${item.location}</td>
+                                                                                                      <td>${item.address}</td>
+                                                                                                      <td>${item.date}</td></tr>`; });
     }
     else
     {
