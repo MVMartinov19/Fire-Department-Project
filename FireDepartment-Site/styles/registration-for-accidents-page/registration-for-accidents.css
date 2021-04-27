@@ -8,7 +8,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    background-color: #101010;
 }
+
 
 /*Registration for accidents styling*/
 
@@ -29,6 +31,7 @@ body {
     text-align: center;
 }
 
+
 /*Registration for accidents h1 styling*/
 
 .registration h1 {
@@ -37,6 +40,7 @@ body {
     margin-bottom: 30px;
     color: #ffffff;
 }
+
 
 /*Form register styling*/
 
@@ -47,6 +51,7 @@ body {
     border-radius: 8px;
 }
 
+
 /*Form register label styling*/
 
 .form-register label {
@@ -56,6 +61,7 @@ body {
     font-size: 18px;
     color: #ffffff;
 }
+
 
 /*Form register input styling*/
 
@@ -70,11 +76,13 @@ body {
     color: #ffffff;
 }
 
+
 /*Form register option styling*/
 
 .form-register option {
     color: #000000;
 }
+
 
 /*Form register selected - hover styling*/
 
@@ -82,11 +90,13 @@ body {
     cursor: pointer;
 }
 
+
 /*Form register input styling*/
 
 .form-register input {
     color: #ffffff;
 }
+
 
 /*Input styling*/
 
@@ -98,6 +108,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(0.8);
 }
 
+
 /*Paragraph styling*/
 
 p {
@@ -105,6 +116,7 @@ p {
     color: #ffffff;
     padding: 10px;
 }
+
 
 /*Button styling*/
 
@@ -117,6 +129,7 @@ p {
     border: none;
     width: 100%;
 }
+
 
 /*Button - hover styling*/
 
